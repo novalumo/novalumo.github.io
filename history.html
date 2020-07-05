@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>沿革 | Novalumo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon256.ico">
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<link rel="stylesheet" href="files/bootstrap.min.css">
+<link rel="stylesheet" href="files/timeline.css">
+<link rel="stylesheet" href="files/fontawesome/css/all.css">
+<style media="screen">
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Noto+Sans+JP:300,400&display=swap');
+body, p, h1, h2, h3, span { font-family: 'Noto Sans JP', sans-serif !important; }
+img {pointer-events: none;}
+a:hover{text-decoration: none;}
+h1, h2, h3, h4, h5, p, small, table, span { cursor: default; }
+a { text-decoration: none; color: #007bff; }
+.applyMargin a { margin: 4px; }
+@media print { footer{ display: none; } }
+
+/* Navbar */
+.navbar { background-color: #fff !important; }
+.navbar-light .navbar-toggler {
+color: rgba(0, 0, 0, 0.5);
+border: none;
+padding: 0px;
+width: 30px;
+height: 30px;
+box-sizing: border-box;
+position: relative;
+}
+.navbar-light .navbar-toggler-icon {
+background-image:none;
+background-color: #000;
+width: 30px;
+height: 2px;
+display: block;
+position: absolute;
+transition: ease .5s;
+}
+.navbar-toggler-icon:nth-of-type(1) {top:7px;}
+.navbar-toggler-icon:nth-of-type(2) {top:14px;}
+.navbar-toggler-icon:nth-of-type(3) {top:21px;}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-of-type(1) {
+top:13px;
+transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-of-type(2) {
+opacity: 0;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-of-type(3) {
+top:13px;
+transform: rotate(-45deg);
+}
+.hoverFade:hover{ opacity: .5; transition: .2s; }
+.navbar-brand:hover{
+transition: .2s;
+opacity: 0.3;
+transform: scale(1.02, 1.02);
+}
+.nav-link:hover{
+transition: .4s;
+opacity: 0.3;
+}
+
+.youtube iframe{ width: 100%; }
+
+.cd-timeline i, .js-cd-timeline i{
+color: #fff; font-size: 130%;
+}
+.fas { position: relative; }
+.fa-play { left: 3px; }
+.fa-building { /* None */ }
+.fa-check { left:1px; }
+
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm justify-content-center" style="background: #fff!important;">
+  <a class="navbar-brand hoverFade" href="/"><img src="https://www.novalumo.llc/img/logo.svg" width="164" class="d-inline-block align-top" style="position: relative; left: 8px;"></a>
+</nav>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">History</h1>
+  <p class="lead">Novalumoの沿革です</p>
+</div>
+<!-- Color
+  primary
+  secondary
+  success
+  danger
+  warning
+  info
+-->
+<section class="cd-timeline js-cd-timeline">
+  <div class="container max-width-lg cd-timeline__container">
+
+    <div class="cd-timeline__block">
+      <div class="cd-timeline__img cd-timeline__img--picture bg-primary">
+        <i class="fas fa-play"></i>
+      </div> <!-- cd-timeline__img -->
+      <div class="cd-timeline__content text-component">
+        <h2>SiraKen.NET 開始</h2>
+        <p style="font-weight: lighter; line-height: 200%; letter-spacing: 0.4px; word-break: break-all;">
+          Novalumo合同会社の前身となる「<a href="https://siraken.github.io/previous">SiraKen.NET</a>」が開設されました。Webページは主にポートフォリオ、リンク集として公開され、動画制作や記事の執筆を行いました。
+        </p>
+        <div class="flex justify-between items-center">
+          <span class="cd-timeline__date">Sep 16, 2019</span>
+        </div>
+      </div> <!-- cd-timeline__content -->
+    </div> <!-- cd-timeline__block -->
+
+    <div class="cd-timeline__block">
+      <div class="cd-timeline__img cd-timeline__img--picture bg-warning">
+        <i class="fas fa-building"></i>
+      </div> <!-- cd-timeline__img -->
+      <div class="cd-timeline__content text-component">
+        <h2>Novalumo合同会社 設立</h2>
+        <p style="font-weight: lighter; line-height: 200%; letter-spacing: 0.4px; word-break: break-all;">
+          岩手県大船渡市にNovalumo合同会社が設立されました。<br>社名にはエスペラント語で「新しい光」という意味があり、世界を照らす新しい光のような企業でありたいという想いが込められています。
+        </p>
+        <img class="rounded shadow-sm" src="files/novalumo.jpg" alt="Novalumo Logo" style="width: 100%;">
+        <div class="flex justify-between items-center">
+          <span class="cd-timeline__date">Apr 30, 2020</span>
+        </div>
+      </div> <!-- cd-timeline__content -->
+    </div> <!-- cd-timeline__block -->
+
+    <div class="cd-timeline__block">
+      <div class="cd-timeline__img cd-timeline__img--picture bg-success">
+        <i class="fas fa-check"></i>
+      </div> <!-- cd-timeline__img -->
+      <div class="cd-timeline__content text-component">
+        <h2>登記手続きの完了</h2>
+        <p style="font-weight: lighter; line-height: 200%; letter-spacing: 0.4px; word-break: break-all;">
+          登記手続きが完了したことで、正式な会社設立の発表やニュースリリースを行い、多くのメディアで取り上げられました。
+        </p>
+        <div class="flex justify-between items-center">
+          <span class="cd-timeline__date">Mar 8, 2020</span>
+        </div>
+      </div> <!-- cd-timeline__content -->
+    </div> <!-- cd-timeline__block -->
+
+  </div>
+</section> <!-- cd-timeline -->
+
+<div class="container-fluid" style="margin: 12px 0px 0px 0px;">
+<footer class="pt-3 my-md-5 pt-md-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-muted text-center">&copy; 2020 Novalumo LLC</small>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="files/timeline.js"></script>
+</body>
+</html>
