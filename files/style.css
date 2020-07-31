@@ -37,7 +37,11 @@ a:hover{ text-decoration: none; }
 .under-anim:hover::after {transform: scale(1, 1);}
 
 /* Navbar */
-.navbar { background-color: #fff !important; }
+.navbar {
+  background-color: #fff !important;
+  margin: 10px;
+  border-radius: 15px;
+}
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
   border: none;
