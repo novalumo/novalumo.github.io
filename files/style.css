@@ -84,7 +84,7 @@ a:hover{ text-decoration: none; }
   text-shadow: 1px 2px 3px #808080;
 }
 .jumbotron h1 span.no-cursor { border-right: none; margin-right: 0; }
-.jumbotron-fluid{ background-size: cover; height: 480px; min-height: 300px; }
+.jumbotron-fluid{ background-size: cover; height: 480px; min-height: 300px; border-radius: 0 0 30px 30px; }
 @keyframes typing { from { width: 0 } to { width: 500px } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
 @media only screen and (min-width: 1068px){ .display-5 { font-size: 2.5rem; } .lead { font-size: 1.25rem; } }
@@ -173,7 +173,7 @@ Default:
 .category-press{ color: #DA0F47; } /* プレスって書いてるけどニュースリリース */
 
 /* Footer */
-.footer-bs { background-color: #f8f9fa; padding: 32px 40px; margin-top: auto; color: rgba(51,51,51,1.00); }
+.footer-bs { background-color: #f8f9fa; padding: 32px 40px; margin-top: auto; color: rgba(51,51,51,1.00); border-radius: 30px 30px 0 0; }
 .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
 .footer-bs .footer-brand h2 { margin:0px 0px 10px;}
