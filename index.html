@@ -189,7 +189,6 @@
   <div class="col-md-3 footer-nav">
     <div class="col-md-8">
         <ul class="list">
-          <li><a href="recruit.html">Recruit</a></li>
           <li><a href="privacypolicy.html">Privacy Policy</a></li>
           <li><a href="https://forms.gle/QCQdC98TmAtfCbB77">Contact</a></li>
         </ul>
@@ -251,6 +250,20 @@ $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
     if(this.id != 'navbarDropdown'){
       $('.navbar-collapse').collapse('hide');
     }
+});
+</script>
+<script type="text/javascript">
+var input = [];
+code = [38,38,40,40,37,39,37,39,66,65];
+
+$(window).keyup(function(e){
+input.push(e.keyCode);
+
+if (input.toString().indexOf(code) >= 0)
+  {
+    alert("Awesome!!");
+    window.location.href = "recruit.html";
+  }
 });
 </script>
 </body>
