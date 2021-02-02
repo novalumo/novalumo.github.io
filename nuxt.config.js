@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Novalumo',
+    title: 'Novalumo合同会社 | A New World Creation Company',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/css/bootstrap-grid.min.css' },
       { rel: 'stylesheet', href: '/css/bs.css' },

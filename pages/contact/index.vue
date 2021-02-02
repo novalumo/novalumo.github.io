@@ -65,6 +65,11 @@ export default {
         body: true
       },
     ]
+  },
+  head() {
+      return {
+          title: 'お問い合わせ | Novalumo',
+      }
   }
 }
 </script>

@@ -100,7 +100,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+    head() {
+        return {
+            title: '会社情報 | Novalumo',
+        }
+    }
+}
 </script>
 
 <style>

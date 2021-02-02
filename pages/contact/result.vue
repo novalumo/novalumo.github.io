@@ -25,7 +25,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+    head() {
+        return {
+            title: 'お問い合わせ - 送信完了 | Novalumo',
+        }
+    }
+}
 </script>
 
 <style>

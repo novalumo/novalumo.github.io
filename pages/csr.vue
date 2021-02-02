@@ -25,7 +25,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+    head() {
+        return {
+            title: 'Novalumoと社会 | Novalumo',
+        }
+    }
+}
 </script>
 
 <style>

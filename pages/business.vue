@@ -46,7 +46,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+    head() {
+        return {
+            title: '事業紹介 | Novalumo',
+        }
+    }
+}
 </script>
 
 <style>
