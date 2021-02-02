@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/csr", {data:[{}],fetch:[],mutations:void 0});
