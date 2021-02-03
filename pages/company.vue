@@ -88,10 +88,6 @@
                   <th><span>2020年</span> <span>5月</span></th>
                   <td>法人登記手続き完了、事業開始（8日）</td>
                 </tr>
-                <tr>
-                  <th><span>2020年</span> <span>12月</span></th>
-                  <td>総売上高100万円を達成</td>
-                </tr>
               </table>
             </div>
           </div>
