@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss">
 #error {
-  background: url('https://source.unsplash.com/GQD3Av_9A88');
+  background: url(https://source.unsplash.com/GQD3Av_9A88);
   background-size: cover;
   background-position: bottom center;
   height: 100%;
@@ -65,7 +65,7 @@ export default {
 
 /*
   &::after {
-    background: url('/img/mask.png') left top repeat;
+    background: url(/img/mask.png) left top repeat;
     background-size: 2px auto;
     content: '';
     display: block;

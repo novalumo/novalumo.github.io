@@ -16,6 +16,7 @@ export default {
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      //{ rel: 'stylesheet', href: '/css/normalize.min.css' },
       { rel: 'stylesheet', href: '/css/bootstrap-grid.min.css' },
       { rel: 'stylesheet', href: '/css/bs.css' },
       { rel: 'stylesheet', href: '/css/style.css' },
@@ -40,6 +41,31 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content',
+    'nuxt-i18n',
+    /*
+    {
+      locales: [
+        {
+           code: 'es',
+           iso: 'en-ES',
+           name: 'Español',
+         },
+         {
+           code: 'en',
+           iso: 'en-US',
+           name: 'English',
+         },
+         {
+           code: 'fr',
+           iso: 'fr-fr',
+           name: 'Français',
+         },
+      ],
+      defaultLocale: 'en',
+      noPrefixDefaultLocale: true,
+    }
+    */
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -8,7 +8,7 @@
         </div>
 
         <div class="container my-3">
-          <div class="row">
+          <div class="row mx-2">
             <div class="col">
               <article>
                 <h2 class="heading">ICT導入支援</h2>

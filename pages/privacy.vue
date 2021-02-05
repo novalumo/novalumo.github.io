@@ -7,8 +7,8 @@
           </div>
         </div>
 
-        <div class="container mt-2 mb-5">
-          <div class="row">
+        <div class="container my-3">
+          <div class="row mx-2">
             <div class="col">
               <article>
               <p>

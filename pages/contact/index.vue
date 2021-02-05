@@ -8,7 +8,7 @@
         </div>
 
         <div class="container my-5">
-          <div class="row">
+          <div class="row mx-2">
             <div class="col contact">
             <small class="m-0">Powered by <a href="https://docs.google.com/forms" target="_blank">Google Forms</a></small>
               <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>印がついたものは必須です。</p>

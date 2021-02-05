@@ -7,15 +7,15 @@
           </div>
         </div>
 
-        <div class="container mt-2 mb-5">
-          <div class="row">
+        <div class="container my-3">
+          <div class="row mx-2">
             <div class="col">
               <h1 class="heading">協力団体</h1>
 
               <article class="support">
                 <h2>Espeyulo</h2>
                 <p>在日外国人への医療提供・法律相談活動への協力</p>
-                <a href="https://www.espeyulo.com/" target="_blank"><i class="fas fa-link"></i> https://www.espeyulo.com/</a>
+                <a href="https://www.espeyulo.com/" target="_blank"><i class="fas fa-link"></i> www.espeyulo.com/</a>
               </article>
 
             </div>
