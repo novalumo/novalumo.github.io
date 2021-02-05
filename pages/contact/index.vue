@@ -32,24 +32,8 @@
                   </div>
               </form>
               <p class="p-2 lbg-info text-info rounded text-center" id="sendingMessage">送信しています...</p>
-              <script type="text/javascript">var submitted = false;</script>
-              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='result';}"></iframe>
-              <script>
-                var submitButton = document.getElementById('subBtn');
-                var sendMes      = document.getElementById('sendingMessage');
-
-                submitButton.onclick = function() {
-                  $('#formNameData').attr('readonly',true);
-                  $('#formCompanyData').attr('readonly',true);
-                  $('#formAddressData').attr('readonly',true);
-                  $('#formEmailData').attr('readonly',true);
-                  $('#formPhoneNumberData').attr('readonly',true);
-                  $('#formTitleData').attr('readonly',true);
-                  $('#formBodyData').attr('readonly',true);
-                  submitButton.style['display'] = 'none';
-                  sendMes.style['opacity']      = '1';
-                }
-              </script>
+              <script type="text/javascript">let submitted = false;</script>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact/result';}"></iframe>
             </div>
           </div>
         </div>
@@ -58,23 +42,21 @@
 
 <script>
 export default {
-  head: {
-    script: [
-      {
-        src: '/js/contact.js',
-        body: true
-      },
-    ]
-  },
   head() {
-      return {
-          title: 'お問い合わせ | Novalumo',
-      }
+    return {
+      title: 'お問い合わせ | Novalumo',
+      script: [
+        {
+          src: '/js/contact.js',
+          body: true
+        },
+      ]
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 /* --- Page Title --- */
 .title {
   background: url(/img/backgrounds/bg_company.jpg);
@@ -122,16 +104,20 @@ form {
     flex-flow: row wrap;
     -ms-flex-align: center;
     align-items: center;
+
+    button {
+      outline: none;
+    }
 }
 
 label {
     display: inline-block;
     margin-bottom: .5rem;
-}
 
-label span {
-  color: #a00;
-  font-size: 1.2em;
+    span {
+      color: #a00;
+      font-size: 1.2em;
+    }
 }
 
 input, textarea {
