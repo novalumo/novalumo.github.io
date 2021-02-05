@@ -7,6 +7,10 @@
           </div>
         </div>
 
+        <div class="info" v-if="stop">
+          <p><i class="fas fa-fw fa-exclamation-circle"></i> 新規制作依頼の受付を一時停止しております。お問い合わせ頂いたものに関しては確認次第ご連絡させていただきます。</p>
+        </div>
+
         <div class="container my-5">
           <div class="row mx-2">
             <div class="col contact">
@@ -52,48 +56,65 @@ export default {
         },
       ]
     }
+  },
+  data() {
+    return {
+      stop: false
+    }
   }
 }
 </script>
 
 <style lang="scss">
-/* --- Page Title --- */
 .title {
   background: url(/img/backgrounds/bg_company.jpg);
   background-size: cover;
   background-position: center;
   height: auto;
   position: relative;
+
+  .title-body {
+    color: #eee;
+    text-shadow: 1px 1px 50px #ccc;
+    cursor: default;
+    padding: 6.4rem 3.7rem;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+
+  &::after {
+    background: url(/img/mask.png) left top repeat;
+    background-size: 2px auto;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
 }
-.title .title-body {
-  color: #eee;
-  text-shadow: 1px 1px 50px #ccc;
+
+.info {
+  padding: 1px 14px;
+  background: #dc3545;
+  color: #fff;
+  font-weight: bold;
+  user-select: none;
   cursor: default;
-  padding: 6.4rem 3.7rem;
-  position: relative;
-  z-index: 1;
-}
-.title .title-body h1 {
-  font-size: 2.8rem;
-  margin: 0;
-}
-.title .title-body p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.title::after {
-  background: url(/img/mask.png) left top repeat;
-  background-size: 2px auto;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
 }
 
 /* Form Style */
