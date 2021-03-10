@@ -2,7 +2,7 @@
     <div>
 
       <div class="info" v-if="showInfo">
-        <p><i class="fas fa-fw fa-exclamation-circle"></i> 2021年3月1日は休業日とさせていただきます。</p>
+        <p><i class="fas fa-fw fa-exclamation-circle"></i></p>
       </div>
 
         <div class="cover">
@@ -19,15 +19,7 @@
 export default {
   computed: {
     showInfo: function() {
-
-      let now = new Date();
-      let exp = new Date(2021, 3, 2, 0, 0, 0);
-
-      if (now < exp) {
-        return true
-      } else {
-        return false
-      }
+      return false
     }
   }
 }
