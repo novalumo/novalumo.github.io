@@ -46,7 +46,7 @@
         </div>
         
         <div class="copyright mx-auto text-center">
-            <span>Copyright &copy; Novalumo G.K.</span> <span>All rights reserved.</span>
+            <span>Copyright &copy; Novalumo</span>, <span>All rights reserved.</span>
         </div>
 
     </footer>
