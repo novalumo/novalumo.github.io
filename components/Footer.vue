@@ -38,7 +38,7 @@
                         <li class="h4 footer-title">ポリシー</li>
                         <li><a href="/privacy/">プライバシーポリシー</a></li>
                         <li><a href="javascript:alert('準備中です');">セキュリティーポリシー</a></li>
-                        <li><a href="/cancel/">キャンセルポリシー</a></li>
+                        <li><a href="/salespolicy/">販売条件</a></li>
                     </ul>
                 </div>
             
