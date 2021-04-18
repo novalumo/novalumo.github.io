@@ -16,9 +16,6 @@ export default {
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      //{ rel: 'stylesheet', href: '/css/normalize.min.css' },
-      { rel: 'stylesheet', href: '/css/bootstrap-grid.min.css' },
-      { rel: 'stylesheet', href: '/css/bs.css' },
       { rel: 'stylesheet', href: '/css/style.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' },
     ]

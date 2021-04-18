@@ -14,7 +14,6 @@
         <div class="container my-5">
           <div class="row mx-2">
             <div class="col contact">
-            <small class="m-0">Powered by <a href="https://docs.google.com/forms" target="_blank">Google Forms</a></small>
               <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>印がついたものは必須です。</p>
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf57U5V7adWmUbIrFIOoNzk90Ex5lOPIJ85ufPnJD7Yq8GdLA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                   <label for="formNameData">お名前 / Name<span>*</span></label>

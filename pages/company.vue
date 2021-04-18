@@ -16,7 +16,7 @@
               <h1 class="heading">ミッション</h1>
               <article>
                 <p>
-                  “Novalumo”（ノバルーモ） は、国際補助語である<a href="https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%83%88" target="_blank">エスペラント</a>で「新しい（Nova）光（Lumo）」という意味があります。
+                  “Novalumo”（ノバルーモ） は、国際補助語であるエスペラントで「新しい（Nova）光（Lumo）」という意味があります。
                   この言葉には「世界中に光を与え、人々を笑顔にしたい」という想いが込められています。
                   情報通信技術やエンターテインメントを通じて、多くの人々に勇気や希望、そして笑顔を届けることが、私たちの使命です。
                 </p>
@@ -27,7 +27,7 @@
               <table>
                 <tbody>
                   <tr>
-                    <th>社名</th>
+                    <th>会社名</th>
                     <td>
                       <span><ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社</span><br>
                       <span>（英文表記）</span><span>Novalumo Japan G.K.</span>
@@ -36,10 +36,6 @@
                   <tr>
                     <th>代表社員</th>
                     <td>白澤 賢斗</td>
-                  </tr>
-                  <tr>
-                    <th><span>本社</span><span>所在地</span></th>
-                    <td>岩手県大船渡市大船渡町字山馬越64-3</td>
                   </tr>
                   <tr>
                     <th>設立</th>
@@ -156,6 +152,7 @@ a {
 /* --- Table --- */
 table {
   width: 100%;
+  margin: 10px 0 24px 0;
   border-collapse: collapse;
 }
 tr {
@@ -163,6 +160,7 @@ tr {
 }
 th, td {
   text-align: left;
+  line-height: 1.5;
   vertical-align: middle;
   padding: 20px 0;
 }
