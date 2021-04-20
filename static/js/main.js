@@ -13,6 +13,12 @@ $(function() {
       sp_menu.classList.remove('active');
       body.style['overflow-y'] = 'auto';
     });
+
+    $('.header-menu-item-sp > a').on('click', function() {
+      $('#overlay').fadeOut();
+      sp_menu.classList.remove('active');
+      body.style['overflow-y'] = 'auto';
+    });
   
   });
   

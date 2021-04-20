@@ -6,10 +6,10 @@
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">Novalumoについて</li>
-                        <li><a href="/company/">会社情報</a></li>
-                        <li><a href="/business/">事業紹介</a></li>
-                        <li><a href="/csr/">Novalumoと社会</a></li>
-                        <li><a href="/contact/">お問い合わせ</a></li>
+                        <li><nuxt-link to="/company/">会社情報</nuxt-link></li>
+                        <li><nuxt-link to="/business/">事業紹介</nuxt-link></li>
+                        <li><nuxt-link to="/csr/">Novalumoと社会</nuxt-link></li>
+                        <li><nuxt-link to="/contact/">お問い合わせ</nuxt-link></li>
                     </ul>
                 </div>
                 
@@ -25,8 +25,8 @@
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">ポリシー</li>
-                        <li><a href="/privacy/">プライバシーポリシー</a></li>
-                        <li><a href="/salespolicy/">販売条件</a></li>
+                        <li><nuxt-link to="/privacy/">プライバシーポリシー</nuxt-link></li>
+                        <li><nuxt-link to="/salespolicy/">販売条件</nuxt-link></li>
                     </ul>
                 </div>
             
