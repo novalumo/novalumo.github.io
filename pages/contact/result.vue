@@ -10,11 +10,11 @@
         <div class="container my-5">
           <div class="row">
             <div class="col py-3">
-              <h2 class="text-center">
+              <h2>
               送信完了しました<br>
               <small>Submitted</small>
               </h2>
-              <p class="h4 text-center">
+              <p>
               確認次第、早急に対応させて頂きます。<br>
               <small>We'll Check Your Message And Response It Soon.</small>
               </p>
@@ -35,46 +35,6 @@ export default {
 </script>
 
 <style>
-/* --- Page Title --- */
-.title {
-  background: url(/img/backgrounds/bg_company.jpg);
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  position: relative;
-}
-.title .title-body {
-  color: #eee;
-  text-shadow: 1px 1px 50px #ccc;
-  cursor: default;
-  padding: 6.4rem 3.7rem;
-  position: relative;
-  z-index: 1;
-}
-.title .title-body h1 {
-  font-size: 2.8rem;
-  margin: 0;
-}
-.title .title-body p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.title::after {
-  background: url(/img/mask.png) left top repeat;
-  background-size: 2px auto;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-/* Form Style */
 form {
     display: -ms-flexbox;
     display: flex;

@@ -31,10 +31,10 @@
                   <label for="formBodyData">本文 / Body<span>*</span></label>
                   <textarea name="entry.2117780832" id="formBodyData" cols="30" rows="10" required></textarea>
                   <div class="mx-auto">
-                    <button class="btn btn-secondary" id="subBtn">送信する</button>
+                    <button class="btn" id="subBtn">送信する</button>
                   </div>
               </form>
-              <p class="p-2 lbg-info text-info rounded text-center" id="sendingMessage">送信しています...</p>
+              <p class="p-2 lbg-info text-info rounded" id="sendingMessage">送信しています...</p>
               <script type="text/javascript">let submitted = false;</script>
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact/result';}"></iframe>
             </div>
@@ -48,12 +48,6 @@ export default {
   head() {
     return {
       title: 'お問い合わせ | Novalumo',
-      script: [
-        {
-          src: '/js/contact.js',
-          body: true
-        },
-      ]
     }
   },
   data() {
@@ -65,48 +59,13 @@ export default {
 </script>
 
 <style lang="scss">
-.title {
-  background: url(/img/backgrounds/bg_company.jpg);
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  position: relative;
-
-  .title-body {
-    color: #eee;
-    text-shadow: 1px 1px 50px #ccc;
-    cursor: default;
-    padding: 6.4rem 3.7rem;
-    position: relative;
-    z-index: 1;
-
-    h1 {
-      font-size: 2.8rem;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.5rem;
-      margin: 0;
-    }
-  }
-
-  &::after {
-    background: url(/img/mask.png) left top repeat;
-    background-size: 2px auto;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+.btn {
+  background: #333;
+  color: #fff;
+  &:hover {
+    opacity: .75;
   }
 }
-
 .info {
   padding: 1px 14px;
   background: #dc3545;
@@ -116,7 +75,6 @@ export default {
   cursor: default;
 }
 
-/* Form Style */
 form {
     display: -ms-flexbox;
     display: flex;

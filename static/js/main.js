@@ -1,4 +1,3 @@
-/* ----- Menu Actions ----- */
 $(function() {
 
     $('.btn-open').on('click', function() {
@@ -30,16 +29,15 @@ $(function() {
     body.style['overflow-y'] = 'auto';
   }
   
-  /* ----- Enter ----- */
+  // Enter
   let input = [];
-  code = [38,38,40,40,37,39,37,39,66,65]; // THIS IS A VERY FAMOUS COMMAND:)
+  code = [38,38,40,40,37,39,37,39,66,65];
   
   $(window).keyup(function(e){
   input.push(e.keyCode);
   
   if (input.toString().indexOf(code) >= 0)
     {
-      alert("Awesome!!");
-      window.location.href = "/recruit/";
+      window.location.href = '/recruit/'; // Coming soon
     }
   });

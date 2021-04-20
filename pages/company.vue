@@ -63,7 +63,7 @@
                       <th>
                         <span title="最高経営責任者">CEO</span>
                       </th>
-                      <td><a href="https://www.siraken.net/" target="_blank">白澤 賢斗</a></td>
+                      <td><a href="https://siraken.github.io/" target="_blank">白澤 賢斗</a></td>
                     </tr>
                     <tr>
                       <th><span title="最高執行責任者">COO</span></th>
@@ -107,49 +107,10 @@ export default {
 </script>
 
 <style>
-/* --- Page Title --- */
-.title {
-  background: url(/img/backgrounds/bg_company.jpg);
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  position: relative;
-}
-.title .title-body {
-  color: #eee;
-  text-shadow: 1px 1px 50px #ccc;
-  cursor: default;
-  padding: 6.4rem 3.7rem;
-  position: relative;
-  z-index: 1;
-}
-.title .title-body h1 {
-  font-size: 2.8rem;
-  margin: 0;
-}
-.title .title-body p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.title::after {
-  background: url(/img/mask.png) left top repeat;
-  background-size: 2px auto;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
 a {
   text-decoration: none;
   color: #007bff;
 }
-/* --- Table --- */
 table {
   width: 100%;
   margin: 10px 0 24px 0;

@@ -21,14 +21,21 @@ export default {
         body: true
       },
       {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js',
-        body: true
-      },
-      {
         src: '/js/main.js',
         body: true
       },
     ]
+  },
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    }
+  },
+  mounted() {
+    let targetBlank = document.querySelectorAll('a[target=_blank]')
+    for (let i = 0; i < targetBlank.length; i++) {
+      targetBlank[i].setAttribute("rel","noopener");
+    }
   }
 }
 </script>
