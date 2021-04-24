@@ -46,7 +46,6 @@ function postInquiry() {
             alert('送信に失敗しました')
         }).always(function() {
             console.log('送信処理終了')
-            preventDefault()
         })
     }
     
