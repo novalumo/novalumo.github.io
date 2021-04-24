@@ -14,7 +14,9 @@
         <div class="container my-5">
           <div class="row mx-2">
             <div class="col contact">
-              <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>印がついたものは必須です。</p>
+              <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>必須 / Required</p>
+              <!-- old -->
+              <!--
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf57U5V7adWmUbIrFIOoNzk90Ex5lOPIJ85ufPnJD7Yq8GdLA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                   <label for="formNameData">お名前 / Name<span>*</span></label>
                   <input type="text" name="entry.596453701" id="formNameData" required>
@@ -34,9 +36,30 @@
                     <button class="btn" id="subBtn">送信する</button>
                   </div>
               </form>
-              <p class="p-2 lbg-info text-info rounded" id="sendingMessage">送信しています...</p>
-              <script type="text/javascript">let submitted = false;</script>
-              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact/result';}"></iframe>
+              -->
+
+              <form>
+                  <label for="formNameData">お名前 / Name<span>*</span></label>
+                  <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
+                  <label for="formCompanyData">会社名・所属 / Company Name & Position</label>
+                  <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
+                  <label for="formAddressData">住所 / Address</label>
+                  <input type="text" name="address" class="formInput" id="formAddressData">
+                  <label for="formEmailData">メールアドレス / Email<span>*</span></label>
+                  <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
+                  <label for="formPhoneNumberData">電話番号 / Phone Number</label>
+                  <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
+                  <label for="formTitleData">タイトル / Title<span>*</span></label>
+                  <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
+                  <label for="formBodyData">本文 / Body<span>*</span></label>
+                  <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
+                  <div class="mx-auto">
+                    <button id="submitButton" class="btn" onclick="postInquiry()">送信する</button>
+                  </div>
+              </form>
+              <div class="sending">
+                <p id="message">送信しています...</p>
+              </div>
             </div>
           </div>
         </div>
@@ -48,6 +71,11 @@ export default {
   head() {
     return {
       title: 'お問い合わせ | Novalumo',
+      script: [
+        {
+          src: '/js/contact.js',
+        },
+      ]
     }
   },
   data() {
@@ -108,15 +136,20 @@ input, textarea {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: none;
+    border-bottom: 1px solid #ced4da;
     border-radius: .1rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:read-only {
+      background: rgba(100, 100, 100, .15);
+    }
 }
 
 input:focus, textarea:focus {
     color: #495057;
     background-color: #fff;
-    border: solid 1px #80bdff;
+    border-bottom: solid 1px #272727;
     outline: 0;
 }
 
@@ -125,9 +158,20 @@ input[readonly], textarea[readonly] {
   opacity: 1;
 }
 
-#sendingMessage {
-  opacity: 0;
-  transition: .2s;
+.sending {
+  text-align: center;
+
+  #message {
+    background: #cfe2ff;
+    color: #084298;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 10px 20px;
+    cursor: default;
+    user-select: none;
+    opacity: 0;
+    transition: .2s;
+  }
 }
 
 .contact {

@@ -4,7 +4,9 @@
     <!-- Overlay -->
     <div id="overlay">
     </div>
+    <transition name="page">
     <Nuxt />
+    </transition>
     <Footer />
 </div>
 </template>

@@ -301,3 +301,11 @@ footer {
     display: inline-block;
   }
 }
+
+// move animation
+.page-enter {
+  //opacity: .3;
+}
+.page-enter-active {
+  //transition: opacity .5s linear;
+}
