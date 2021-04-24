@@ -38,7 +38,7 @@
               </form>
               -->
 
-              <form>
+              <form onsubmit="return false">
                   <label for="formNameData">お名前 / Name<span>*</span></label>
                   <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
                   <label for="formCompanyData">会社名・所属 / Company Name & Position</label>
