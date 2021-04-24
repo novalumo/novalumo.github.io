@@ -32,7 +32,7 @@ function postInquiry() {
         }
     
         $.ajax({
-            url: 'https://script.google.com/macros/s/AKfycbybegWRt7STr4PgsXF61dnvODcsPsJP-RC2MX3ABRu61RdRXmG9IUhOViCxuccjSOhsSw/exec',
+            url: 'https://script.google.com/macros/s/AKfycbxcrVjKUQ5HJ1Fxpje4QI3sYGC4l6RkKnICH_YALhPETXU4WDWAucwC8q3t6vKTKudrfg/exec',
             type: 'POST',
             data: data
         }).done(function(res){
