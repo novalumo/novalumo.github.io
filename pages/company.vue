@@ -13,7 +13,7 @@
             <div class="col"><!-- col -->
 
               <!-- mission -->
-              <h1 class="heading">ミッション</h1>
+              <h2 class="heading">ミッション</h2>
               <article>
                 <p>
                   “Novalumo”（ノバルーモ） は、国際補助語であるエスペラントで「新しい（Nova）光（Lumo）」という意味があります。
@@ -23,7 +23,7 @@
               </article>
 
               <!-- about -->
-              <h1 class="heading">会社概要</h1>
+              <h2 class="heading">会社概要</h2>
               <table>
                 <tbody>
                   <tr>
@@ -56,7 +56,7 @@
 
               <!-- officer -->
               <div>
-                <h1 class="heading">役員</h1>
+                <h2 class="heading">役員</h2>
                 <table>
                   <tbody>
                     <tr>
@@ -74,7 +74,7 @@
               </div>
 
               <!-- history -->
-              <h1 class="heading">沿革</h1>
+              <h2 class="heading">沿革</h2>
               <table>
                 <tbody>
                   <tr>

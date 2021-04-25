@@ -1,0 +1,52 @@
+footer {
+    background: #fefefe;
+    color: #333;
+    border-top: solid 1px #ddd;
+    font-weight: bold;
+    
+    hr {
+      width: 90%;
+      border: solid .3px #efefef;
+    }
+  
+  }
+  
+  .footer-content {
+    
+    ul {
+      list-style: none;
+      line-height: 2.1;
+      font-size: 1.1rem;
+      
+      .footer-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: default;
+      }
+      
+      a {
+        text-decoration: none;
+        color: #777;
+        transition: .1s;
+        
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+  
+  .copyright {
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(245, 245, 245, 0.5);
+    color: #777;
+    font-size: .8rem;
+    border-top: solid 1px #ddd;
+    cursor: default;
+    text-align: center;
+    
+    span {
+      display: inline-block;
+    }
+  }

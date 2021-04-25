@@ -10,7 +10,7 @@
         <div class="container my-3">
           <div class="row mx-2">
             <div class="col">
-              <h1 class="heading">Coming soon</h1>
+              <h2 class="heading">Coming soon</h2>
 
             </div>
           </div>

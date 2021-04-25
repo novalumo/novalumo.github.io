@@ -8,7 +8,6 @@
                         <li class="footer-title">Novalumoについて</li>
                         <li><nuxt-link to="/company/">会社情報</nuxt-link></li>
                         <li><nuxt-link to="/business/">事業紹介</nuxt-link></li>
-                        <li><nuxt-link to="/csr/">Novalumoと社会</nuxt-link></li>
                         <li><nuxt-link to="/contact/">お問い合わせ</nuxt-link></li>
                     </ul>
                 </div>
