@@ -106,7 +106,7 @@
               </p>
               <p>
                 Novalumo合同会社 カスタマーサポートデスク<br>
-                Eメールアドレス：contact<span id="atmark"></span>novalumo.llc
+                Eメールアドレス: support<span id="atmark"></span>novalumo.llc
               </p>
               </article>
 
