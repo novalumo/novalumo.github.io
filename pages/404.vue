@@ -2,8 +2,8 @@
 <div id="error">
   <div id="errorBox">
     <div>
-      <h1>{{ error.statusCode }} {{ message[0] }}</h1>
-      <p>{{ message[1] }}</p>
+      <h1>404 Not Found</h1>
+      <p>お探しのページは見つかりませんでした</p>
       <small><span id="counter"></span>秒後にトップページへ移動します</small>
     </div>
   </div>
@@ -12,29 +12,18 @@
 
 <script>
 export default {
-  props: ['error'],
-  computed: {
-    message() {
-      if (this.error.statusCode === 404) {
-        return ['Not Found', 'お探しのページは見つかりませんでした']
-      }
-      return ['Error', 'エラーが発生しました']
-    }
-  },
   mounted() {
-    if (this.error.statusCode === 404) {
-      let count = 10
-      const countUp = () => {
-        if (count != 0) {
-          document.getElementById('counter').innerHTML = count
-          console.log(count--);
-          setTimeout(countUp, 1000);
-        } else {
-          location.href = '/'
-        }
+    let count = 10
+    const countUp = () => {
+      if (count != 0) {
+        document.getElementById('counter').innerHTML = count
+        console.log(count--);
+        setTimeout(countUp, 1000);
+      } else {
+        location.href = '/'
       }
-      countUp()
     }
+    countUp()
   }
 }
 </script>
