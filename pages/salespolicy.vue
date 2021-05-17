@@ -23,23 +23,44 @@
             <h2 class="heading">特定商取引法に基づく表示</h2>
 
             <h3>販売業者</h3>
-            <p>Novalumo合同会社</p>
+            <p>{{info.company}}</p>
 
             <h3>業務責任者</h3>
-            <p>代表社員　白澤 賢斗</p>
+            <p>{{info.staff}}</p>
 
             <h3>所在地</h3>
-            <p>岩手県大船渡市大船渡町字山馬越64-3 県営住宅336号</p>
+            <p class="noselect">〒{{info.zipcode}}<br>{{info.address}}</p>
+
+            <h3>電話番号</h3>
+            <p class="noselect">{{info.tel}}</p>
 
             <h3>メールアドレス</h3>
-            <p>contact@novalumo.llc</p>
+            <p class="noselect">{{info.email}}</p>
 
+            <h3>お支払方法</h3>
             <!--
-            商品代金以外の必要料金の説明
+              代引き、銀行振込、郵便振込、クレジットカードなど、自分のネットショップで扱う支払方法を表示します。
+            -->
+            <p>
+              クレジットカード(Stripe決済システムを使用)、銀行振込、PayPal
+            </p>
+
+            <h3>お支払期限</h3>
+            <!--
+              後払いの支払いは納品より何日以内、前払いの場合は注文日より何日以内かを表示します。
+            -->
+            <p>
+              クレジットカード、PayPal：各カード会社引き落とし日<br>
+              銀行振込：ご注文後7日以内
+            </p>
+
+            <h3>商品代金以外の必要料金</h3>
+            <!--
               商品代金以外にかかる料金（送料、消費税、手数料など）を全て表示します。
               ※クレジットカード決済の手数料は、購入者負担にできません。その旨を記載しないようにご注意ください。
               送料の請求がある場合は、具体的な金額を記載します。
             -->
+            <p>送料、消費税、決済手数料、振込手数料</p>
 
             <!--
             申込有効期限
@@ -62,16 +83,6 @@
               後払いの場合は注文日より何日以内、前払いの場合は入金日より何日以内で発送できるかを表示します。
               地域、条件により期間が異なる場合は、最長で何日以内かも表示します。
               ※クレジットカードは後払いです。
-            -->
-
-            <!--
-            お支払方法
-              代引き、銀行振込、郵便振込、クレジットカードなど、自分のネットショップで扱う支払方法を表示します。
-            -->
-
-            <!--
-            お支払期限
-              後払いの支払いは納品より何日以内、前払いの場合は注文日より何日以内かを表示します。
             -->
 
             <!--
@@ -106,6 +117,16 @@ export default {
         return {
             title: '販売条件 | Novalumo',
         }
+    },
+    data() {
+      return {
+        info: []
+      }
+    },
+    async fetch() {
+      this.info = await fetch(
+        'https://script.google.com/macros/s/AKfycbxezm-94sqtfbuvEyJZJ_y8lZ4MIyy2UuBzxjAGsZrUSF9nTeN8pya_LT1ExadxO1bJ/exec'
+      ).then(res => res.json())
     }
 }
 </script>
@@ -136,5 +157,9 @@ article {
 a {
   text-decoration: none;
   color: #007bff;
+}
+.noselect {
+  user-select: none;
+  pointer-events: none;
 }
 </style>
