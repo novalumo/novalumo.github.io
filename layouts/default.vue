@@ -26,17 +26,6 @@ export default {
       },
     ]
   },
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    }
-  },
-  mounted() {
-    let targetBlank = document.querySelectorAll('a[target=_blank]')
-    for (let i = 0; i < targetBlank.length; i++) {
-      targetBlank[i].setAttribute('rel', 'noopener noreferrer');
-    }
-  }
 }
 </script>
 

@@ -26,7 +26,7 @@
               </p>
               <p>
                 また、本WebサイトはGoogleアナリティクスを使用しており、Cookie、デバイスの識別情報（広告識別子など）を収集しています。
-                詳しくは<a href="https://policies.google.com/technologies/partner-sites" target="_blank">Googleによるデータ使用</a>のページをご確認ください。
+                詳しくは<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Googleによるデータ使用</a>のページをご確認ください。
               </p>
 
               <h3>第3条（個人情報を収集・利用する目的）</h3>

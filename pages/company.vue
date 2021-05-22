@@ -63,7 +63,7 @@
                   <th>
                     <span title="最高経営責任者">CEO</span>
                   </th>
-                  <td>白澤 賢斗 <a href="https://siraken.github.io/" target="_blank"><i class="fas fa-fw fa-external-link-alt"></i></a></td>
+                  <td>白澤 賢斗 <a href="https://siraken.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-external-link-alt"></i></a></td>
                 </tr>
                 <tr>
                   <th><span title="最高執行責任者">COO</span></th>
