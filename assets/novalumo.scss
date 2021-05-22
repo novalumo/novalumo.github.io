@@ -1,0 +1,18 @@
+/*!
+ * Novalumo Corporate Website Stylesheet
+ * Copyright 2020-2021 Novalumo (Japan)
+ */
+
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap);
+
+// Bootstrap
+@import 'reboot';
+@import 'grid';
+
+// Novalumo
+@import 'common';
+@import 'header';
+@import 'footer';
+@import 'title';
+@import 'animate';
+@import 'button';

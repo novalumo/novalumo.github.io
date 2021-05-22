@@ -1,11 +1,9 @@
 <template>
 <div>
     <Header />
-    <!-- Overlay -->
-    <div id="overlay">
-    </div>
+    <div id="overlay"></div>
     <transition name="page">
-    <Nuxt />
+      <Nuxt />
     </transition>
     <Footer />
 </div>
@@ -36,7 +34,7 @@ export default {
   mounted() {
     let targetBlank = document.querySelectorAll('a[target=_blank]')
     for (let i = 0; i < targetBlank.length; i++) {
-      targetBlank[i].setAttribute("rel","noopener");
+      targetBlank[i].setAttribute('rel', 'noopener noreferrer');
     }
   }
 }

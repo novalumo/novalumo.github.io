@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Novalumo合同会社 | A New World Creation Company',
+    titleTemplate:  '%s | Novalumo',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -28,7 +28,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/main.scss'
+    '~/assets/novalumo.scss',
   ],
 
   loading: {

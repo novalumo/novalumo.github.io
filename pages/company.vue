@@ -63,7 +63,7 @@
                       <th>
                         <span title="最高経営責任者">CEO</span>
                       </th>
-                      <td><a href="https://siraken.github.io/" target="_blank">白澤 賢斗</a></td>
+                      <td>白澤 賢斗 <a href="https://siraken.github.io/" target="_blank"><i class="fas fa-fw fa-external-link-alt"></i></a></td>
                     </tr>
                     <tr>
                       <th><span title="最高執行責任者">COO</span></th>
@@ -100,20 +100,20 @@
 export default {
     head() {
         return {
-            title: '会社情報 | Novalumo',
+            title: '会社情報',
         }
     }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 a {
   text-decoration: none;
   color: #007bff;
 }
 table {
   width: 100%;
-  margin: 10px 0 24px 0;
+  margin: 0 0 32px 0;
   border-collapse: collapse;
 }
 tr {

@@ -115,7 +115,7 @@
 export default {
     head() {
         return {
-            title: '販売条件 | Novalumo',
+            title: '販売条件',
         }
     },
     data() {
@@ -131,7 +131,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 table {
   width: 100%;
   margin: 14px 0 14px 0;

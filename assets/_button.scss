@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-decoration: none;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: .1s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

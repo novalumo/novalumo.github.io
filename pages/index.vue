@@ -17,6 +17,12 @@
 
 <script>
 export default {
+  head() {
+    return {
+      titleTemplate: '',
+      title: 'Novalumo合同会社 | A New World Creation Company',
+    }
+  },
   computed: {
     showInfo: function() {
       return false
@@ -25,13 +31,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .cover {
   background: url(/img/backgrounds/bg.jpg);
   background-size: cover;
   background-position: center;
   height: 80vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &::after {
     background: url(/img/mask.png) left top repeat;
@@ -52,7 +61,7 @@ export default {
   color: #eee;
   text-shadow: 1px 1px 50px #ccc;
   cursor: default;
-  padding: 30vh 54px;
+  padding: 0 5vw;
   position: relative;
   z-index: 1;
 

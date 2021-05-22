@@ -2,7 +2,7 @@
 <div>
     <footer>
         <div class="container-fluid">
-            <div class="row footer-content">
+            <div class="row content">
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">Novalumoについて</li>

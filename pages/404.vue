@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #error {
   background: url(https://source.unsplash.com/GQD3Av_9A88);
   background-size: cover;

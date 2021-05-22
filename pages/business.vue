@@ -49,13 +49,16 @@
 export default {
     head() {
         return {
-            title: '事業紹介 | Novalumo',
+            title: '事業紹介',
         }
+    },
+    mounted() {
+      //document.getElementById('midashi').classList.add('animate')
     }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .img-fluid {
   border: solid 2px #eee;
   border-radius: 1.5rem;

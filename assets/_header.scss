@@ -1,3 +1,7 @@
+/*!
+ * Header
+ */
+
 header {
     background: #fff;
     color: #333;
@@ -9,7 +13,6 @@ header {
     .logo {
       display: flex;
       text-decoration: none;
-      max-height: 94px;
     }
   }
   
@@ -18,6 +21,7 @@ header {
     justify-content: space-between;
     margin: 0 0 0 auto;
     font-size: 18px;
+    line-height: 1.15;
   }
   
   .header-menu-item {

@@ -70,7 +70,7 @@
 export default {
   head() {
     return {
-      title: 'お問い合わせ | Novalumo',
+      title: 'お問い合わせ',
       script: [
         {
           src: '/js/contact.js',
@@ -86,7 +86,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .btn {
   background: #333;
   color: #fff;

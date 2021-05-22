@@ -1,0 +1,31 @@
+/*!
+ *
+ * Animate
+ *
+ */
+
+// move animation
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  transition: opacity .2s linear;
+}
+
+/* */
+.animate {
+  animation: slideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+// transition: opacity 0.5s ease 0s, transform 0.5s ease 0s;
+  
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

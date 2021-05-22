@@ -22,13 +22,13 @@
 export default {
     head() {
         return {
-            title: '採用情報 | Novalumo',
+            title: '採用情報',
         }
     }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 table {
   width: 100%;
   border-collapse: collapse;
