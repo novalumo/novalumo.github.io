@@ -26,7 +26,7 @@
     <!-- spHeader -->
     <div class="header-menubox-sp" id="sp_menu">
         <div class="menu-sp-top">
-            <img class="sp-logo" src="/img/logo.svg" width="120">
+            
             <a href="#" onclick="closeSmartMenu();" class="close-btn">
                 <img src="/img/btn-close.svg" width="30">
             </a>
@@ -45,6 +45,12 @@
     </div>
 </div>
 </template>
+
+<script>
+export default {
+    
+}
+</script>
 
 <style>
 

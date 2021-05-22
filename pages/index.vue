@@ -42,6 +42,41 @@ export default {
   flex-direction: column;
   justify-content: center;
 
+  .cover-body {
+    color: #eee;
+    text-shadow: 1px 1px 50px #ccc;
+    cursor: default;
+    padding: 0 5vw;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: calc(18px + 3.4vw);
+      font-weight: bold;
+      margin: 0;
+
+      span {
+        display: inline-block;
+        background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        color: #ff0000;
+      }
+    }
+
+    p {
+      font-size: calc(18px + .7vw);
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 10px 0 0 0;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
   &::after {
     background: url(/img/mask.png) left top repeat;
     background-size: 2px auto;
@@ -55,39 +90,6 @@ export default {
     bottom: 0;
     left: 0;
     z-index: 0;
-  }
-}
-.cover .cover-body {
-  color: #eee;
-  text-shadow: 1px 1px 50px #ccc;
-  cursor: default;
-  padding: 0 5vw;
-  position: relative;
-  z-index: 1;
-
-  h1 {
-    font-size: calc(18px + 3.4vw);
-    font-weight: bold;
-    margin: 0;
-
-    span {
-      display: inline-block;
-      background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: rgba(255, 255, 255, 0);
-      color: #ff0000;
-    }
-  }
-
-  p {
-    font-size: calc(18px + .7vw);
-    font-weight: 700;
-    margin: 0;
-
-    span {
-      display: inline-block;
-    }
   }
 }
 

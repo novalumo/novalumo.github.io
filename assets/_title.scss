@@ -8,26 +8,30 @@
   background: url(/img/backgrounds/bg_company.jpg);
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 280px;
   position: relative;
   margin: 0 0 32px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .title-body {
     color: #eee;
     text-shadow: 1px 1px 50px #ccc;
     cursor: default;
-    padding: 6.4rem 3.7rem;
+    padding: 0 7vw;
     position: relative;
     z-index: 1;
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       font-weight: bold;
       margin: 0;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 0;
     }
   }
