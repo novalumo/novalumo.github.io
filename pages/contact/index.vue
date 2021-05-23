@@ -14,7 +14,7 @@
         <div class="container my-5">
           <div class="row mx-2">
             <div class="col contact">
-              <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>必須 / Required</p>
+              <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>{{ $t('contact.required') }}</p>
               <!-- old -->
               <!--
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf57U5V7adWmUbIrFIOoNzk90Ex5lOPIJ85ufPnJD7Yq8GdLA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
@@ -39,26 +39,26 @@
               -->
 
               <form onsubmit="return false">
-                  <label for="formNameData">お名前 / Name<span>*</span></label>
+                  <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
                   <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
-                  <label for="formCompanyData">会社名・所属 / Company Name & Position</label>
+                  <label for="formCompanyData">{{ $t('contact.company_position') }}</label>
                   <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
-                  <label for="formAddressData">住所 / Address</label>
+                  <label for="formAddressData">{{ $t('contact.address') }}</label>
                   <input type="text" name="address" class="formInput" id="formAddressData">
-                  <label for="formEmailData">メールアドレス / Email<span>*</span></label>
+                  <label for="formEmailData">{{ $t('contact.email') }}<span>*</span></label>
                   <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
-                  <label for="formPhoneNumberData">電話番号 / Phone Number</label>
+                  <label for="formPhoneNumberData">{{ $t('contact.phone') }}</label>
                   <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
-                  <label for="formTitleData">タイトル / Title<span>*</span></label>
+                  <label for="formTitleData">{{ $t('contact.inquiry_title') }}<span>*</span></label>
                   <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
-                  <label for="formBodyData">本文 / Body<span>*</span></label>
+                  <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
                   <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
                   <div class="mx-auto">
-                    <button id="submitButton" class="btn" onclick="postInquiry()">送信する</button>
+                    <button id="submitButton" class="btn" onclick="postInquiry()">{{ $t('contact.send_button') }}</button>
                   </div>
               </form>
               <div class="sending">
-                <p id="message">送信しています...</p>
+                <p id="message">{{ $t('contact.sending_message') }}</p>
               </div>
             </div>
           </div>

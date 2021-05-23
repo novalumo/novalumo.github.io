@@ -12,26 +12,24 @@
 
 <script>
 export default {
-  head: {
-    script: [
-      {
-        src: '/js/hello.js',
-      },
-      {
-        src: 'https://code.jquery.com/jquery-3.5.1.min.js',
-        body: true
-      },
-      {
-        src: '/js/main.js',
-        body: true
-      },
-    ]
-  },
   head() {
     return {
       htmlAttrs: {
         lang: this.$i18n.localeProperties.iso
-      }
+      },
+      script: [
+        {
+          src: '/js/hello.js',
+        },
+        {
+          src: 'https://code.jquery.com/jquery-3.5.1.min.js',
+          body: true
+        },
+        {
+          src: '/js/main.js',
+          body: true
+        },
+      ]
     }
   },
 }

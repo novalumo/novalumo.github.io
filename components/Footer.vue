@@ -5,17 +5,17 @@
             <div class="row content">
                 <div class="col-md-4">
                     <ul>
-                        <li class="footer-title">Novalumoについて</li>
-                        <li><nuxt-link :to="localePath('/company/')">会社情報</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('/business/')">事業紹介</nuxt-link></li>
-                        <li><a href="https://news.novalumo.llc/">ニュースルーム</a></li>
-                        <li><nuxt-link :to="localePath('/contact/')">お問い合わせ</nuxt-link></li>
+                        <li class="footer-title">{{ $t('footer.about.title') }}</li>
+                        <li><nuxt-link :to="localePath('/company/')">{{ $t('footer.about.company') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/business/')">{{ $t('footer.about.business') }}</nuxt-link></li>
+                        <li><a href="https://news.novalumo.llc/">{{ $t('footer.about.newsroom') }}</a></li>
+                        <li><nuxt-link :to="localePath('/contact/')">{{ $t('footer.about.contact') }}</nuxt-link></li>
                     </ul>
                 </div>
                 
                 <div class="col-md-4">
                     <ul>
-                        <li class="footer-title">ソーシャル</li>
+                        <li class="footer-title">{{ $t('footer.social') }}</li>
                         <li><a href="https://twitter.com/novalumo" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                         <li><a href="https://www.facebook.com/Novalumo.LLC" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                         <li><a href="https://www.youtube.com/channel/UCbJbGA69cPlsw1exVfpvj8A" target="_blank" rel="noopener noreferrer">YouTube</a></li>
@@ -24,9 +24,9 @@
                 
                 <div class="col-md-4">
                     <ul>
-                        <li class="footer-title">ポリシー</li>
-                        <li><nuxt-link :to="localePath('/privacy/')">プライバシーポリシー</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('/salespolicy/')">販売条件</nuxt-link></li>
+                        <li class="footer-title">{{ $t('footer.policy.title') }}</li>
+                        <li><nuxt-link :to="localePath('/privacy/')">{{ $t('footer.policy.privacy') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/salespolicy/')">{{ $t('footer.policy.sales') }}</nuxt-link></li>
                     </ul>
                 </div>
             

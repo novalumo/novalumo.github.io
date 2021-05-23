@@ -34,7 +34,14 @@ export default {
       }
       countUp()
     }
-  }
+  },
+  head() {
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.localeProperties.iso
+      }
+    }
+  },
 }
 </script>
 

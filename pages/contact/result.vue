@@ -10,14 +10,8 @@
         <div class="container my-5">
           <div class="row">
             <div class="col py-3" style="text-align:center;">
-              <h2>
-              送信完了しました<br>
-              <small>Submitted</small>
-              </h2>
-              <p>
-              確認次第、早急に対応させて頂きます。<br>
-              <small>We'll Check Your Message And Response It Soon.</small>
-              </p>
+              <h2>{{ $t('contact.result.submitted') }}</h2>
+              <p>{{ $t('contact.result.comment') }}</p>
             </div>
           </div>
         </div>
