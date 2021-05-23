@@ -4,38 +4,46 @@ export default {
     {
       code: 'en',
       iso: 'en',
-      file: 'en.json'
+      file: 'en.json',
+      name: 'English'
     },
     // 日本語
     {
       code: 'jp',
       iso: 'ja',
-      file: 'ja.json'
+      file: 'ja.json',
+      name: '日本語'
     },
+    /*
     // Esperanto
     {
       code: 'eo',
       iso: 'eo',
-      file: 'eo.json'
+      file: 'eo.json',
+      name: 'Esperanto'
     },
     // Español
     {
       code: 'es',
       iso: 'es',
-      file: 'es.json'
+      file: 'es.json',
+      name: 'Español'
     },
     // Deutsch
     {
       code: 'de',
       iso: 'de',
-      file: 'de.json'
+      file: 'de.json',
+      name: 'Deutsch'
     },
     // Français
     {
       code: 'fr',
       iso: 'fr',
-      file: 'fr.json'
+      file: 'fr.json',
+      name: 'Français'
     }
+    */
   ],
   defaultLocale: 'en',
   fallbackLocale: 'en',

@@ -54,7 +54,7 @@
                   <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
                   <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
                   <div class="mx-auto">
-                    <button id="submitButton" class="btn" onclick="postInquiry()">{{ $t('contact.send_button') }}</button>
+                    <button id="submitButton" class="btn" onclick="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
                   </div>
               </form>
               <div class="sending">

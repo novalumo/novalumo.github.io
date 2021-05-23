@@ -6,6 +6,7 @@
       <Nuxt />
     </transition>
     <Footer />
+    <!-- <Language /> -->
     <!-- <Cookie /> -->
 </div>
 </template>
