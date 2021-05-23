@@ -41,5 +41,8 @@ export default {
   fallbackLocale: 'en',
   lazy: true,
   langDir: 'locales/',
-  //detectBrowserLanguage: { alwaysRedirect: true },
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'i18n_redirected'
+  },
 }
