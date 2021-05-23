@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/jp", {data:[{}],fetch:{},mutations:void 0});
