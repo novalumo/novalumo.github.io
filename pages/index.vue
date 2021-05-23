@@ -7,8 +7,8 @@
 
         <div class="cover">
             <div class="cover-body">
-                <h1>We Brighten <span>The World</span></h1>
-                <p><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
+                <h1 class="text">We Brighten <span>The World</span></h1>
+                <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
             </div>
         </div>
 

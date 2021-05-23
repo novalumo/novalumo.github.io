@@ -1,3 +1,5 @@
+import i18n from './nuxt-i18n.config'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -5,9 +7,6 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate:  '%s | Novalumo',
-    htmlAttrs: {
-      lang: 'ja'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -49,31 +48,9 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content',
-    'nuxt-i18n',
-    /*
-    {
-      locales: [
-        {
-           code: 'es',
-           iso: 'en-ES',
-           name: 'Español',
-         },
-         {
-           code: 'en',
-           iso: 'en-US',
-           name: 'English',
-         },
-         {
-           code: 'fr',
-           iso: 'fr-fr',
-           name: 'Français',
-         },
-      ],
-      defaultLocale: 'en',
-      noPrefixDefaultLocale: true,
-    }
-    */
+    //'@nuxt/content',
+    ['nuxt-i18n', i18n],
+    
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

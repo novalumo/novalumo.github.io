@@ -4,7 +4,6 @@
     <div>
       <h1>{{ error.statusCode }} {{ message[0] }}</h1>
       <p>{{ message[1] }}</p>
-      <small><span id="counter"></span>秒後にトップページへ移動します</small>
     </div>
   </div>
 </div>

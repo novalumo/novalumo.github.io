@@ -110,6 +110,8 @@
               </p>
               </article>
 
+              <!-- <iframe src="/docs/privacypolicy.html" width="100%"></iframe> -->
+
             </div>
           </div>
         </div>

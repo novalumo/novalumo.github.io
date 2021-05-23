@@ -6,6 +6,7 @@
       <Nuxt />
     </transition>
     <Footer />
+    <!-- <Cookie /> -->
 </div>
 </template>
 
@@ -25,6 +26,13 @@ export default {
         body: true
       },
     ]
+  },
+  head() {
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.localeProperties.iso
+      }
+    }
   },
 }
 </script>

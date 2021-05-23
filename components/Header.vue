@@ -2,18 +2,18 @@
 <div>
     <!-- Header -->
     <header>
-        <nuxt-link to="/" class="logo">
+        <nuxt-link :to="localePath('/')" class="logo">
             <img src="/img/logo.svg" width="154">
         </nuxt-link>
         <ul class="header-menu">
             <li class="header-menu-item">
-                <nuxt-link to="/business/">Business<span>事業紹介</span></nuxt-link>
+                <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
             </li>
             <li class="header-menu-item">
-                <nuxt-link to="/company/">Company<span>会社情報</span></nuxt-link>
+                <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
             </li>
             <li class="header-menu-item">
-                <nuxt-link to="/contact/">Contact<span>お問い合わせ</span></nuxt-link>
+                <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
             </li>
         </ul>
         <div class="menu-opener">
@@ -33,13 +33,13 @@
         </div>
         <ul class="header-menu-sp">
             <li class="header-menu-item-sp">
-                <nuxt-link to="/business/">Business<span>事業紹介</span></nuxt-link>
+                <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
             </li>
             <li class="header-menu-item-sp">
-                <nuxt-link to="/company/">Company<span>会社情報</span></nuxt-link>
+                <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
             </li>
             <li class="header-menu-item-sp">
-                <nuxt-link to="/contact/">Contact<span>お問い合わせ</span></nuxt-link>
+                <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
             </li>
         </ul>
     </div>

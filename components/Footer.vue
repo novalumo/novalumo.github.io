@@ -6,10 +6,10 @@
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">Novalumoについて</li>
-                        <li><nuxt-link to="/company/">会社情報</nuxt-link></li>
-                        <li><nuxt-link to="/business/">事業紹介</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/company/')">会社情報</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/business/')">事業紹介</nuxt-link></li>
                         <li><a href="https://news.novalumo.llc/">ニュースルーム</a></li>
-                        <li><nuxt-link to="/contact/">お問い合わせ</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/contact/')">お問い合わせ</nuxt-link></li>
                     </ul>
                 </div>
                 
@@ -25,8 +25,8 @@
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">ポリシー</li>
-                        <li><nuxt-link to="/privacy/">プライバシーポリシー</nuxt-link></li>
-                        <li><nuxt-link to="/salespolicy/">販売条件</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/privacy/')">プライバシーポリシー</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('/salespolicy/')">販売条件</nuxt-link></li>
                     </ul>
                 </div>
             
