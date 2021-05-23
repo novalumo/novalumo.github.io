@@ -41,5 +41,5 @@ export default {
   fallbackLocale: 'en',
   lazy: true,
   langDir: 'locales/',
-  detectBrowserLanguage: { alwaysRedirect: true },
+  //detectBrowserLanguage: { alwaysRedirect: true },
 }
