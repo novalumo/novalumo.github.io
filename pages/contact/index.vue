@@ -54,7 +54,7 @@
                   <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
                   <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
                   <div class="mx-auto">
-                    <button id="submitButton" class="btn" onclick="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
+                    <button id="submitButton" class="btn" @click="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
                   </div>
               </form>
               <div class="sending">
@@ -71,17 +71,66 @@ export default {
   head() {
     return {
       title: 'お問い合わせ',
-      script: [
-        {
-          src: '/js/contact.js',
-        },
-      ]
     }
   },
   data() {
     return {
       stop: false
     }
+  },
+  methods: {
+    postInquiry() {
+
+      let name    = $('input[name="name"]').val()
+      let company = $('input[name="company"]').val()
+      let address = $('input[name="address"]').val()
+      let email   = $('input[name="email"]').val()
+      let phone   = $('input[name="phone"]').val()
+      let title   = $('input[name="title"]').val()
+      let body    = $('textarea[name="body"]').val()
+
+      if (name == '' || email == '' || title == '' || body == '') {
+          name  = '' ? false : true 
+          email = '' ? false : true
+          title = '' ? false : true
+          body  = '' ? false : true
+      } else {
+          submitButton.style.display = 'none'
+          message.style.opacity = '1'
+          let input = document.getElementsByClassName('formInput')
+          for(let i = 0; i < input.length; i++) {
+              input[i].disabled = true
+          }
+
+          let data = {
+              name: name,
+              company: company,
+              address: address,
+              email: email,
+              phone: phone,
+              title: title,
+              body: body,
+          }
+      
+          $.ajax({
+              url: 'https://script.google.com/macros/s/AKfycbxcrVjKUQ5HJ1Fxpje4QI3sYGC4l6RkKnICH_YALhPETXU4WDWAucwC8q3t6vKTKudrfg/exec',
+              type: 'POST',
+              data: data
+          }).done(function(res){
+              if(res.response != 'success') {
+                  console.log(JSON.stringify(res.error))
+                  alert('送信に失敗しました')
+                  return;
+              }
+              location.href = './contact/result'
+          }).fail(function(){
+              alert('送信に失敗しました')
+          }).always(function() {
+              console.log('送信処理終了')
+          })
+      }
+      
+  }
   }
 }
 </script>
