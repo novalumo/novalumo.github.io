@@ -2,13 +2,13 @@
     <div>
 
       <div class="info" v-if="showInfo">
-        <p><i class="fas fa-fw fa-exclamation-circle"></i></p>
+        <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> 日本語サイトは <a href="/jp/" style="color: #fff;">こちら</a></p>
       </div>
 
         <div class="cover">
             <div class="cover-body">
                 <h1 class="text">We Brighten <span>The World</span></h1>
-                <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
+                <p class="text"><span>{{ $t('home.sub_1') }}</span><span>{{ $t('home.sub_2') }}</span><span>{{ $t('home.sub_3') }}</span></p>
             </div>
         </div>
 
@@ -25,7 +25,16 @@ export default {
   },
   computed: {
     showInfo: function() {
-      return false
+      let lang = this.$i18n.locale
+      if (lang == 'jp') {
+        return false
+      }
+      return true
+    }
+  },
+  methods: {
+    toJapanese: function() {
+      this.$router.replace(this.switchLocalePath('jp'))
     }
   }
 }

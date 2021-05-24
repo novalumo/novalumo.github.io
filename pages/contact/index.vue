@@ -158,6 +158,17 @@ input[readonly], textarea[readonly] {
   opacity: 1;
 }
 
+#submitButton {
+  i {
+    transition: .3s;
+  }
+  &:hover {
+    i {
+      transform: translateX(3px);
+    }
+  }
+}
+
 .sending {
   text-align: center;
 
