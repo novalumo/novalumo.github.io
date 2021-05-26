@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/recruit", {data:[{}],fetch:{},mutations:void 0});
