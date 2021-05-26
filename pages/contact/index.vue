@@ -38,24 +38,32 @@
               </form>
               -->
 
-              <form onsubmit="return false">
-                  <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
-                  <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
-                  <label for="formCompanyData">{{ $t('contact.company_position') }}</label>
-                  <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
-                  <label for="formAddressData">{{ $t('contact.address') }}</label>
-                  <input type="text" name="address" class="formInput" id="formAddressData">
-                  <label for="formEmailData">{{ $t('contact.email') }}<span>*</span></label>
-                  <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
-                  <label for="formPhoneNumberData">{{ $t('contact.phone') }}</label>
-                  <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
-                  <label for="formTitleData">{{ $t('contact.inquiry_title') }}<span>*</span></label>
-                  <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
-                  <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
-                  <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
-                  <div class="mx-auto">
-                    <button id="submitButton" class="btn" @click="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
+              <form onsubmit="return false" @submit.prevent>
+                <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
+                <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
+                <label for="formCompanyData">{{ $t('contact.company') }}</label>
+                <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
+                <label for="formAddressData">{{ $t('contact.address') }}</label>
+                <input type="text" name="address" class="formInput" id="formAddressData">
+                <label for="formEmailData">{{ $t('contact.email') }}<span>*</span></label>
+                <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
+                <label for="formPhoneNumberData">{{ $t('contact.phone') }}</label>
+                <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
+                <label for="formTitleData">{{ $t('contact.inquiry_title') }}<span>*</span></label>
+                <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
+                <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
+                <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
+                <div class="col-12">
+                  <div class="chkbox">
+                    <input type="checkbox" id="agree" v-model="agree">
+                    <label for="agree">{{ $t('contact.agree.1') }}<nuxt-link :to="localePath('/privacy/')">{{ $t('contact.agree.2') }}</nuxt-link>{{ $t('contact.agree.3') }}</label>
                   </div>
+                </div>
+                <div class="col-12">
+                  <div class="submit">
+                    <button id="submitButton" class="btn" v-bind:class="{disabled:!agree}" v-bind="{disabled:!agree}" @click="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
+                  </div>
+                </div>
               </form>
               <div class="sending">
                 <p id="message">{{ $t('contact.sending_message') }}</p>
@@ -75,7 +83,8 @@ export default {
   },
   data() {
     return {
-      stop: false
+      stop: false,
+      agree: false
     }
   },
   methods: {
@@ -114,13 +123,15 @@ export default {
       
           $.ajax({
               url: 'https://script.google.com/macros/s/AKfycbxcrVjKUQ5HJ1Fxpje4QI3sYGC4l6RkKnICH_YALhPETXU4WDWAucwC8q3t6vKTKudrfg/exec',
+              // url: '/',
               type: 'POST',
               data: data
           }).done(function(res){
               if(res.response != 'success') {
                   console.log(JSON.stringify(res.error))
                   alert('送信に失敗しました')
-                  return;
+                  location.reload()
+                  return
               }
               location.href = './contact/result'
           }).fail(function(){
@@ -139,8 +150,14 @@ export default {
 .btn {
   background: #333;
   color: #fff;
+
+  &.disabled {
+    visibility: hidden;
+    background: #ccc;
+  }
+
   &:hover {
-    opacity: .75;
+    opacity: .95;
   }
 }
 .info {
@@ -153,58 +170,101 @@ export default {
 }
 
 form {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
 
-    button {
-      outline: none;
-    }
+  button {
+    outline: none;
+  }
 }
 
 label {
-    display: inline-block;
-    margin-bottom: .5rem;
+  display: inline-block;
+  margin-bottom: .5rem;
 
-    span {
-      color: #a00;
-      font-size: 1.2em;
-    }
+  span {
+    color: #a00;
+    font-size: 1.2em;
+  }
 }
 
 input, textarea {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    margin-bottom: .7rem;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: none;
-    border-bottom: 1px solid #ced4da;
-    border-radius: .1rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  margin-bottom: .7rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: .1rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
-    &:read-only {
-      background: rgba(100, 100, 100, .15);
-    }
+  &:read-only {
+    background: rgba(100, 100, 100, .15);
+  }
 }
 
 input:focus, textarea:focus {
-    color: #495057;
-    background-color: #fff;
-    border-bottom: solid 1px #272727;
-    outline: 0;
+  color: #495057;
+  background: #fff;
+  border-bottom: solid 1px #272727;
+  outline: 0;
 }
 
 input[readonly], textarea[readonly] {
-  background-color: #e9ecef;
+  background: #e9ecef;
   opacity: 1;
+}
+
+.chkbox {
+  margin: 10px 0;
+  text-align: center;
+
+  label {
+    padding-left: 38px;
+    line-height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+
+    a {
+      text-decoration: none;
+    }
+
+    &:before {
+      content: '';
+      width: 1.2em;
+      height:	1.2em;
+      display: inline-block;
+      position: absolute;
+      left:	0;
+      background: #fff;
+      border: solid 1px #ccc;
+    }
+
+  }
+
+  input[type=checkbox] {
+    display: none;
+
+    &:checked + label:before {
+      content: '\2713';
+      color: #333;
+    }
+  }
+}
+
+.submit {
+  text-align: center;
 }
 
 #submitButton {
@@ -222,8 +282,8 @@ input[readonly], textarea[readonly] {
   text-align: center;
 
   #message {
-    background: #cfe2ff;
-    color: #084298;
+    background: #eee;
+    color: #333;
     display: inline-block;
     margin: 8px 0;
     padding: 10px 20px;

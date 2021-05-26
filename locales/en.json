@@ -54,12 +54,17 @@
     "contact": {
         "required": "Required",
         "name": "Name",
-        "company_position": "Company Name & Position",
+        "company": "Company",
         "address": "Address",
         "email": "Email",
         "phone": "Phone Number",
         "inquiry_title": "Title",
-        "body": "Body",
+        "body": "Inquiry",
+        "agree": {
+            "1": "Agree to the ",
+            "2": "Privacy Policy",
+            "3": ""
+        },
         "send_button": "SEND",
         "sending_message": "Sending...",
         "result": {

@@ -9,7 +9,7 @@ export default {
     },
     // 日本語
     {
-      code: 'jp',
+      code: 'ja',
       iso: 'ja',
       file: 'ja.json',
       name: '日本語'
@@ -45,8 +45,8 @@ export default {
     }
     */
   ],
-  defaultLocale: 'en',
-  fallbackLocale: 'en',
+  defaultLocale: 'ja',
+  fallbackLocale: 'ja',
   lazy: true,
   langDir: 'locales/',
   detectBrowserLanguage: {

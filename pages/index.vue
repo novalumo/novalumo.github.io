@@ -1,18 +1,20 @@
 <template>
-    <div>
+  <div>
 
-      <div class="info" v-if="showInfo">
-        <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> 日本語サイトは <a href="/jp/" style="color: #fff;">こちら</a></p>
-      </div>
-
-        <div class="cover">
-            <div class="cover-body">
-                <h1 class="text">We Brighten <span>The World</span></h1>
-                <p class="text"><span>{{ $t('home.sub_1') }}</span><span>{{ $t('home.sub_2') }}</span><span>{{ $t('home.sub_3') }}</span></p>
-            </div>
-        </div>
-
+    <!-- info -->
+    <div class="info" v-if="showInfo">
+      <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i></p>
     </div>
+
+    <!-- cover -->
+    <div class="cover">
+        <div class="cover-body">
+            <h1 class="text">We Brighten <span>The World</span></h1>
+            <p class="text"><span>{{ $t('home.sub_1') }}</span><span>{{ $t('home.sub_2') }}</span><span>{{ $t('home.sub_3') }}</span></p>
+        </div>
+    </div>
+
+  </div>
 </template>
 
 <script>
@@ -25,18 +27,9 @@ export default {
   },
   computed: {
     showInfo: function() {
-      let lang = this.$i18n.locale
-      if (lang == 'jp') {
-        return false
-      }
-      return true
+      return false
     }
   },
-  methods: {
-    toJapanese: function() {
-      this.$router.replace(this.switchLocalePath('jp'))
-    }
-  }
 }
 </script>
 

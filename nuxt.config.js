@@ -16,6 +16,9 @@ export default {
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' },
+    ],
+    script: [
+      
     ]
   },
   
@@ -50,10 +53,14 @@ export default {
   modules: [
     //'@nuxt/content',
     ['nuxt-i18n', i18n],
-    
+    '@nuxtjs/axios'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  axios: {
+    // proxy: true
   }
 }

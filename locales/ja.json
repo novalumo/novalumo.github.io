@@ -54,12 +54,17 @@
     "contact": {
         "required": "入力必須",
         "name": "お名前",
-        "company_position": "会社名・所属",
+        "company": "会社名",
         "address": "住所",
         "email": "メールアドレス",
         "phone": "電話番号",
         "inquiry_title": "タイトル",
-        "body": "本文",
+        "body": "お問い合わせ内容",
+        "agree": {
+            "1": "",
+            "2": "プライバシーポリシー",
+            "3": "に同意する"
+        },
         "send_button": "送信する",
         "sending_message": "送信しています...",
         "result": {
