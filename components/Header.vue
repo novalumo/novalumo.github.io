@@ -1,49 +1,49 @@
 <template>
-<div>
+  <div>
     <!-- Header -->
     <header>
-        <nuxt-link :to="localePath('/')" class="logo">
-            <img src="/img/logo.svg" width="154">
-        </nuxt-link>
-        <ul class="header-menu">
-            <li class="header-menu-item">
-                <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
-            </li>
-            <li class="header-menu-item">
-                <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
-            </li>
-            <li class="header-menu-item">
-                <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
-            </li>
-        </ul>
-        <div class="menu-opener">
-            <a href="#" onclick="openSmartMenu();" class="btn-open">
-                <img src="/img/btn-open.svg" width="32">
-            </a>
-        </div>
+      <nuxt-link :to="localePath('/')" class="logo">
+          <img src="/img/logo.svg" width="154">
+      </nuxt-link>
+      <ul class="header-menu">
+          <li class="header-menu-item">
+              <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}<!-- Business<span>事業紹介</span> --></nuxt-link>
+          </li>
+          <li class="header-menu-item">
+              <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}<!-- Company<span>会社情報</span> --></nuxt-link>
+          </li>
+          <li class="header-menu-item">
+              <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}<!-- Contact<span>お問い合わせ</span> --></nuxt-link>
+          </li>
+      </ul>
+      <div class="menu-opener">
+          <a href="#" onclick="openSmartMenu();" class="btn-open">
+              <img src="/img/btn-open.svg" width="32">
+          </a>
+      </div>
     </header>
     
     <!-- spHeader -->
     <div class="header-menubox-sp" id="sp_menu">
-        <div class="menu-sp-top">
-            
-            <a href="#" onclick="closeSmartMenu();" class="close-btn">
-                <img src="/img/btn-close.svg" width="30">
-            </a>
-        </div>
-        <ul class="header-menu-sp">
-            <li class="header-menu-item-sp">
-                <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
-            </li>
-            <li class="header-menu-item-sp">
-                <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
-            </li>
-            <li class="header-menu-item-sp">
-                <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
-            </li>
-        </ul>
+      <div class="menu-sp-top">
+          
+          <a href="#" onclick="closeSmartMenu();" class="close-btn">
+              <img src="/img/btn-close.svg" width="30">
+          </a>
+      </div>
+      <ul class="header-menu-sp">
+          <li class="header-menu-item-sp">
+              <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
+          </li>
+          <li class="header-menu-item-sp">
+              <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
+          </li>
+          <li class="header-menu-item-sp">
+              <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
+          </li>
+      </ul>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -72,7 +72,9 @@ header {
   justify-content: space-between;
   margin: 0 0 0 auto;
   font-size: 18px;
-  line-height: 1.15;
+  position: relative;
+  right: 12px;
+  // line-height: 1.15;
 }
 
 .header-menu-item {
@@ -85,9 +87,10 @@ header {
     text-decoration: none;
     text-align: center;
     letter-spacing: 1.2px;
-    padding: 28px;
+    // padding: 28px;
+    padding: 28px 18px;
     color: #333;
-    border-left: solid 1px #ddd;
+    // border-left: solid 1px #ddd;
     transition: .2s;
     
     &:hover {

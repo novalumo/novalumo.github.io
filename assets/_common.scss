@@ -23,6 +23,10 @@ p {
   font-size: 1.1rem;
 }
 
+path, line {
+  shape-rendering: crispEdges;
+}
+
 .heading {
   font-size: 2rem;
   line-height: 1.5;

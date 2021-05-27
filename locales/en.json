@@ -63,7 +63,7 @@
         "agree": {
             "1": "Agree to the ",
             "2": "Privacy Policy",
-            "3": ""
+            "3": " "
         },
         "send_button": "SEND",
         "sending_message": "Sending...",
