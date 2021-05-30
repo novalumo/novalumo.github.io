@@ -30,25 +30,22 @@
             "body": "“Novalumo”（ノバルーモ） は、国際補助語であるエスペラントで「新しい（Nova）光（Lumo）」という意味があります。 この言葉には「世界中に光を与え、人々を笑顔にしたい」という想いが込められています。 情報通信技術やエンターテインメントを通じて、多くの人々に勇気や希望、そして笑顔を届けることが、私たちの使命です。"
         },
         "overview": {
-            "name": "English",
-            "rep": "Kento Shirasawa",
+            "title": "Overview",
+            "name": "Name",
+            "name_eng": "English",
+            "rep": "CEO",
+            "rep_name": "Kento Shirasawa",
+            "est": "Founded",
             "est_date": "April 30, 2020",
-            "capital": "30,000 JPY",
-            "bank": "Bank of Iwate, Tohoku Bank"
+            "capital": "Capital",
+            "capital_price": "30,000 JPY",
+            "bank": "Banks",
+            "banks": "Bank of Iwate, Tohoku Bank"
         },
         "officer": {
+            "title": "Officer",
             "ceo": "Kento Shirasawa",
             "coo_1": "Satomi Shirasawa"
-        },
-        "history": {
-            "2020_04": {
-                "title": "Apr 2020",
-                "001": "Established Novalumo Japan G.K. (Apr 30)"
-            },
-            "2020_05": {
-                "title": "May 2020",
-                "001": "The corporate registration procedure has been completed. (May 5)"
-            }
         }
     },
     "contact": {
