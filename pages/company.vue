@@ -84,7 +84,7 @@
 export default {
   head() {
     return {
-        title: '会社情報',
+        title: this.$t('company.title'),
     }
   },
 }

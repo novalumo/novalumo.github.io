@@ -78,7 +78,7 @@
 export default {
   head() {
     return {
-      title: 'お問い合わせ',
+      title: this.$t('contact.title'),
     }
   },
   data() {

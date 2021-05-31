@@ -1,6 +1,7 @@
 <template>
-  <div class="lang-switch row">
+  <div class="row" id="langSwitch">
     <div>
+      <i class="fas fa-fw fa-2x fa-angle-left" id="hideArrow" @click="toggle()"></i>
       <p class="about"><i class="fas fa-fw fa-globe"></i> {{ $t('switch') }}</p>
     </div>
     <div>
@@ -32,34 +33,64 @@ export default {
     };
   },
   created() {
-    this.selectedLanguage = this.$i18n.locale;
+    this.selectedLanguage = this.$i18n.locale
   },
   methods: {
     onChange(event) {
-      this.$router.replace(this.switchLocalePath(event));
+      this.$router.replace(this.switchLocalePath(event))
+    },
+    toggle() {
+      document.getElementById('langSwitch').style.transition = 'linear .1s'
+      // Hidden
+      if (document.getElementById('langSwitch').classList.contains('hide')) {
+        document.getElementById('langSwitch').style.transform = 'translateX(0%)'
+        document.getElementById('hideArrow').style.transform = 'rotateZ(0deg)'
+        document.getElementById('langSwitch').classList.remove('hide')
+      // Shown
+      } else {
+        document.getElementById('langSwitch').style.transform = 'translateX(85%)'
+        document.getElementById('hideArrow').style.transform = 'rotateZ(180deg)'
+        document.getElementById('langSwitch').classList.add('hide')
+      }
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.lang-switch {
+#hideArrow {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  line-height: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transition: linear .2s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+  
+}
+#langSwitch {
   position: fixed;
   top: auto;
   bottom: 14px;
   right: 0;
-  width: 380px;
+  width: 250px;
   max-width: 100%;
   background: #fff;
   display: flex;
   border: solid 1px #eee;
   border-radius: 18px 0 0 18px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-  padding: 18px;
+  padding: 14px 10px 18px 28px;
   margin: 0;
   display: flex;
   align-items: center;
-  z-index: 1000;
+  z-index: 100;
 
   .about {
     font-size: 18px;

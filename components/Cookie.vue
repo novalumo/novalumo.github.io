@@ -3,9 +3,8 @@
     <div class="col-md-10 description">
       <p class="about">Cookie（クッキー）について</p>
       <p>
-          このページでは、お客様に快適にウェブサイトをご利用いただくため、Cookie（クッキー）を利用しています。
-          Cookie（クッキー）の使用方法の詳細については、 <nuxt-link to="/privacy">プライバシーポリシー</nuxt-link>を参照してください。
-          「同意する」をクリックしてアクティブにするか、不要な場合は「同意しない」をクリックしてください。
+        お客様に快適にウェブサイトをご利用いただくため、Cookie（クッキー）を利用しています。
+        Cookie（クッキー）の使用方法の詳細については、 <nuxt-link to="/privacy">プライバシーポリシー</nuxt-link>を参照してください。
       </p>
     </div>
     <div class="col-md-2 buttons">
@@ -23,6 +22,9 @@ export default {
     return {
       cookie: false
     }
+  },
+  methods: {
+
   }
 }
 </script>
@@ -39,6 +41,7 @@ export default {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   padding: 18px;
   margin: 0;
+  z-index: 300;
 
   p {
     margin: 0;
