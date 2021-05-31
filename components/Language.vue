@@ -99,6 +99,9 @@ export default {
   }
 
   select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     background: #333;
     color: #fff;
     border: solid 1px #ccc;
