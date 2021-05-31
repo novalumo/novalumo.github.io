@@ -1,7 +1,7 @@
 <template>
   <div class="row" id="langSwitch">
     <div>
-      <i class="fas fa-fw fa-2x fa-angle-left" id="hideArrow" @click="toggle()"></i>
+      <i class="fas fa-fw fa-2x fa-angle-right" id="hideArrow" @click="toggle()"></i>
       <p class="about"><i class="fas fa-fw fa-globe"></i> {{ $t('switch') }}</p>
     </div>
     <div>
