@@ -53,7 +53,8 @@ export default {
   modules: [
     //'@nuxt/content',
     ['nuxt-i18n', i18n],
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/gtm'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -62,5 +63,11 @@ export default {
 
   axios: {
     // proxy: true
+  },
+
+  gtm: {
+    id: 'GTM-538NQQ9',
+    debug: false,
+    pageTracking: true,
   }
 }
