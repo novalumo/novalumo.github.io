@@ -11,6 +11,12 @@
           <div class="row mx-2">
             <div class="col">
               <article>
+                
+              <!-- info -->
+              <div class="info" v-if="this.lang == 'en'">
+                <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> We are sorry that this page is not translated and available only in Japanese so far.</p>
+              </div>
+                
               <p>
               Novalumo合同会社（以下、「当社」といいます。）は、本ウェブサイト上、及び当社で提供するサービス（以下、「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
               </p>
@@ -112,11 +118,16 @@
 
 <script>
 export default {
-    head() {
-        return {
-            title: 'プライバシーポリシー',
-        }
+  data() {
+    return {
+      lang: this.$i18n.localeProperties.code
     }
+  },
+  head() {
+    return {
+      title: 'プライバシーポリシー',
+    }
+  }
 }
 </script>
 
@@ -148,5 +159,16 @@ article {
 a {
   text-decoration: none;
   color: #007bff;
+}
+
+// info
+.info {
+  padding: 10px 14px;
+  margin: 0 0 18px 0;
+  background: #dc3545;
+  color: #fff;
+  font-weight: bold;
+  user-select: none;
+  cursor: default;
 }
 </style>

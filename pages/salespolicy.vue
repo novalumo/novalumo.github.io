@@ -11,6 +11,12 @@
       <div class="row mx-2">
         <div class="col">
           <article>
+
+            <!-- info -->
+            <div class="info" v-if="this.lang == 'en'">
+              <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> We are sorry that this page is not translated and available only in Japanese so far.</p>
+            </div>
+
             <!-- cancel policy -->
             <h2 class="heading">キャンセルについて</h2>
             <p>
@@ -120,7 +126,8 @@ export default {
     },
     data() {
       return {
-        info: []
+        info: [],
+        lang: this.$i18n.localeProperties.code
       }
     },
     async fetch() {
@@ -161,5 +168,16 @@ a {
 .noselect {
   user-select: none;
   pointer-events: none;
+}
+
+// info
+.info {
+  padding: 10px 14px;
+  margin: 0 0 18px 0;
+  background: #dc3545;
+  color: #fff;
+  font-weight: bold;
+  user-select: none;
+  cursor: default;
 }
 </style>

@@ -10,7 +10,14 @@
     <div class="cover">
         <div class="cover-body">
             <h1 class="text">We Brighten <span>The World</span></h1>
-            <p class="text"><span>{{ $t('home.sub_1') }}</span><span>{{ $t('home.sub_2') }}</span><span>{{ $t('home.sub_3') }}</span></p>
+            <!-- i18n -->
+            <div v-if="this.lang == 'ja'">
+              <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
+            </div>
+            <div v-if="this.lang == 'en'">
+              <p class="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
+            </div>
+            <!-- i18n -->
         </div>
     </div>
 
@@ -19,6 +26,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      lang: this.$i18n.localeProperties.code
+    }
+  },
   head() {
     return {
       titleTemplate: '',
