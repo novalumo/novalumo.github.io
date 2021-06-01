@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Header -->
+    <!-- Desktop -->
     <header>
       <nuxt-link :to="localePath('/')" class="logo">
           <img src="/img/logo.svg" width="154">
@@ -23,7 +23,7 @@
       </div>
     </header>
     
-    <!-- spHeader -->
+    <!-- Mobile -->
     <div class="header-menubox-sp" id="sp_menu">
       <div class="menu-sp-top">
           
@@ -33,13 +33,13 @@
       </div>
       <ul class="header-menu-sp">
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/business/')">Business<span>事業紹介</span></nuxt-link>
+              <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}<!-- Business<span>事業紹介</span> --></nuxt-link>
           </li>
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/company/')">Company<span>会社情報</span></nuxt-link>
+              <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}<!-- Company<span>会社情報</span> --></nuxt-link>
           </li>
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/contact/')">Contact<span>お問い合わせ</span></nuxt-link>
+              <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}<!-- Contact<span>お問い合わせ</span> --></nuxt-link>
           </li>
       </ul>
     </div>
