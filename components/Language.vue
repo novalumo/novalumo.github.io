@@ -5,21 +5,17 @@
       <p class="about"><i class="fas fa-fw fa-globe"></i> {{ $t('switch') }}</p>
     </div>
     <div>
-      <!--
-      <nuxt-link
-      v-for="locale in availableLocales"
-      :key="locale.code"
-      :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
-      -->
-      
-      <select v-model="selectedLanguage" @change="onChange(selectedLanguage)">
-        <option
-          v-for="(locale, index) in $i18n.locales"
-            :key="index"
-            :value="locale.code"
-            :selected="locale.code === locale"
-        >{{locale.name}}</option>
-      </select>
+    
+    <!-- Switch -->
+    <select v-model="selectedLanguage" @change="onChange(selectedLanguage)">
+      <option
+        v-for="(locale, index) in $i18n.locales"
+          :key="index"
+          :value="locale.code"
+          :selected="locale.code === locale"
+      >{{locale.name}}</option>
+    </select>
+    <!-- / Switch -->
 
     </div>
   </div>
@@ -29,11 +25,14 @@
 export default {
   data() {
     return {
-      selectedLanguage: ''
+      selectedLanguage: '',
     };
   },
   created() {
     this.selectedLanguage = this.$i18n.locale
+  },
+  mounted() {
+    this.toggle()
   },
   methods: {
     onChange(event) {
@@ -41,16 +40,16 @@ export default {
     },
     toggle() {
       document.getElementById('langSwitch').style.transition = 'linear .1s'
-      // Hidden
-      if (document.getElementById('langSwitch').classList.contains('hide')) {
+      // Show
+      if (localStorage.getItem('LangBar') == null || localStorage.getItem('LangBar') == 0) {
         document.getElementById('langSwitch').style.transform = 'translateX(0%)'
         document.getElementById('hideArrow').style.transform = 'rotateZ(0deg)'
-        document.getElementById('langSwitch').classList.remove('hide')
-      // Shown
+        localStorage.setItem('LangBar', 1)
+      // Hide
       } else {
         document.getElementById('langSwitch').style.transform = 'translateX(85%)'
         document.getElementById('hideArrow').style.transform = 'rotateZ(180deg)'
-        document.getElementById('langSwitch').classList.add('hide')
+        localStorage.setItem('LangBar', 0)
       }
     }
   }
@@ -90,6 +89,7 @@ export default {
   margin: 0;
   display: flex;
   align-items: center;
+  will-change: transform;
   z-index: 100;
 
   .about {
@@ -112,7 +112,8 @@ export default {
     outline: none;
     transition: .2s;
 
-    &:not(.dont):hover {
+    &:hover {
+      cursor: pointer;
       opacity: .8;
     }
   }

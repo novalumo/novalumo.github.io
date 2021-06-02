@@ -34,7 +34,8 @@ export default {
   ],
 
   loading: {
-    color: 'blue',
+    color: 'lightblue',
+    failedColor: 'red',
     height: '5px'
   },
 

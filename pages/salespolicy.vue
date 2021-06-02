@@ -119,22 +119,22 @@
 
 <script>
 export default {
-    head() {
-        return {
-            title: '販売条件',
-        }
-    },
-    data() {
-      return {
-        info: [],
-        lang: this.$i18n.localeProperties.code
-      }
-    },
-    async fetch() {
-      this.info = await fetch(
-        'https://script.google.com/macros/s/AKfycbxezm-94sqtfbuvEyJZJ_y8lZ4MIyy2UuBzxjAGsZrUSF9nTeN8pya_LT1ExadxO1bJ/exec'
-      ).then(res => res.json())
+  head() {
+    return {
+      title: '販売条件',
     }
+  },
+  data() {
+    return {
+      info: [],
+      lang: this.$i18n.localeProperties.code
+    }
+  },
+  async fetch() {
+    this.info = await fetch(
+      'https://script.google.com/macros/s/AKfycbxezm-94sqtfbuvEyJZJ_y8lZ4MIyy2UuBzxjAGsZrUSF9nTeN8pya_LT1ExadxO1bJ/exec'
+    ).then(res => res.json())
+  }
 }
 </script>
 
