@@ -43,12 +43,6 @@
                 <th>{{ $t('company.overview.capital') }}</th>
                 <td>{{ $t('company.overview.capital_price') }}</td>
               </tr>
-              <tr>
-                <th>{{ $t('company.overview.bank') }}</th>
-                <td>
-                  {{ $t('company.overview.banks') }}<br>
-                </td>
-              </tr>
             </tbody>
           </table>
 
@@ -97,7 +91,7 @@ a {
 }
 table {
   width: 100%;
-  margin: 0 0 32px 0;
+  margin: -10px 0 34px 0;
   border-collapse: collapse;
 }
 tr {

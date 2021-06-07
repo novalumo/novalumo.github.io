@@ -54,9 +54,7 @@
             "est": "Founded",
             "est_date": "April 30, 2020",
             "capital": "Capital",
-            "capital_price": "30,000 JPY",
-            "bank": "Banks",
-            "banks": "Bank of Iwate, Tohoku Bank"
+            "capital_price": "30,000 JPY"
         },
         "officer": {
             "title": "Officer",

@@ -53,9 +53,7 @@
             "est": "設立",
             "est_date": "2020年4月30日",
             "capital": "資本金",
-            "capital_price": "30,000円",
-            "bank": "取引銀行",
-            "banks": "岩手銀行、東北銀行"
+            "capital_price": "30,000円"
         },
         "officer": {
             "title": "役員",
