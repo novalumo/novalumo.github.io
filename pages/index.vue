@@ -17,6 +17,9 @@
             <div v-if="this.lang == 'en'">
               <p class="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
             </div>
+            <div v-if="this.lang == 'eo'">
+              <p class="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
+            </div>
             <!-- i18n -->
         </div>
     </div>

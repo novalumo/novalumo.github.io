@@ -1,12 +1,5 @@
 export default {
   locales: [
-    // English
-    {
-      code: 'en',
-      iso: 'en',
-      file: 'en.json',
-      name: 'English'
-    },
     // 日本語
     {
       code: 'ja',
@@ -14,7 +7,13 @@ export default {
       file: 'ja.json',
       name: '日本語'
     },
-    /*
+    // English
+    {
+      code: 'en',
+      iso: 'en',
+      file: 'en.json',
+      name: 'English'
+    },
     // Esperanto
     {
       code: 'eo',
@@ -22,6 +21,7 @@ export default {
       file: 'eo.json',
       name: 'Esperanto'
     },
+    /*
     // Español
     {
       code: 'es',

@@ -16,6 +16,9 @@
             <div class="info" v-if="this.lang == 'en'">
               <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> We are sorry that this page is not translated and available only in Japanese so far.</p>
             </div>
+            <div class="info" v-if="this.lang == 'eo'">
+              <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> Ni bedaŭras, ke ĉi tiu paĝo ne estas tradukita kaj disponebla nur en la japana ĝis nun.</p>
+            </div>
 
             <!-- cancel policy -->
             <h2 class="heading">キャンセルについて</h2>

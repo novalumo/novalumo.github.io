@@ -2,7 +2,7 @@
   <div class="row" id="langSwitch">
     <div>
       <i class="fas fa-fw fa-2x fa-angle-right" id="hideArrow" @click="toggle()"></i>
-      <p class="about"><i class="fas fa-fw fa-globe"></i> {{ $t('switch') }}</p>
+      <p class="about"><i class="fas fa-fw fa-globe"></i> Language</p>
     </div>
     <div>
     
