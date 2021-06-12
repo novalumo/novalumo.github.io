@@ -16,12 +16,9 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        lang: this.$i18n.localeProperties.iso
+        lang: this.$i18n.locale,
       },
       script: [
-        {
-          src: '/js/hello.js',
-        },
         {
           src: 'https://code.jquery.com/jquery-3.5.1.min.js',
           body: true
@@ -29,6 +26,9 @@ export default {
         {
           src: '/js/main.js',
           body: true
+        },
+        {
+          src: '/js/hello.js',
         },
       ]
     }

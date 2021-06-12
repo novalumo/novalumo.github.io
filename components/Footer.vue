@@ -97,4 +97,13 @@ footer {
   }
   
 }
+
+// sp
+@media (max-width: 777px) {
+  footer {
+    .copyright {
+      padding: 10px 0 env(safe-area-inset-bottom) 0;
+    }
+  }
+}
 </style>

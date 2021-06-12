@@ -6,10 +6,10 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate:  '%s | Novalumo',
+    titleTemplate:  '%s | Novalumo合同会社',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: 'Novalumo合同会社は、岩手県大船渡市にある「新世界創造会社」です。地域課題解決やメディア制作、イベント運営など幅広い事業を展開しています。' }
     ],
     link: [
@@ -17,9 +17,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' },
     ],
-    script: [
-      
-    ]
   },
   
   router: {
@@ -34,7 +31,7 @@ export default {
   ],
 
   loading: {
-    color: 'lightblue',
+    color: 'blue',
     failedColor: 'red',
     height: '5px'
   },

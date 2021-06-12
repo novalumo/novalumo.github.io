@@ -19,6 +19,12 @@
               <div class="info" v-if="this.lang == 'eo'">
                 <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> Ni bedaŭras, ke ĉi tiu paĝo ne estas tradukita kaj disponebla nur en la japana ĝis nun.</p>
               </div>
+              <div class="info" v-if="this.lang == 'de'">
+                <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> Es tut uns leid, dass diese Seite bisher nicht übersetzt und nur auf Japanisch verfügbar ist.</p>
+              </div>
+              <div class="info" v-if="this.lang == 'fr'">
+                <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> Nous sommes désolés que cette page ne soit pas traduite et disponible uniquement en japonais jusqu'à présent.</p>
+              </div>
                 
               <p>
               Novalumo合同会社（以下、「当社」といいます。）は、本ウェブサイト上、及び当社で提供するサービス（以下、「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。

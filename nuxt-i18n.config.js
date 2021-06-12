@@ -1,4 +1,6 @@
 export default {
+  baseUrl: 'https://www.novalumo.llc',
+  seo: true,
   locales: [
     // 日本語
     {
@@ -21,29 +23,41 @@ export default {
       file: 'eo.json',
       name: 'Esperanto'
     },
-    /*
-    // Español
-    {
-      code: 'es',
-      iso: 'es',
-      file: 'es.json',
-      name: 'Español'
-    },
     // Deutsch
-    {
-      code: 'de',
-      iso: 'de',
-      file: 'de.json',
-      name: 'Deutsch'
-    },
-    // Français
-    {
-      code: 'fr',
-      iso: 'fr',
-      file: 'fr.json',
-      name: 'Français'
-    }
-    */
+    // {
+    //   code: 'de',
+    //   iso: 'de',
+    //   file: 'de.json',
+    //   name: 'Deutsch'
+    // },
+    // // Français
+    // {
+    //   code: 'fr',
+    //   iso: 'fr',
+    //   file: 'fr.json',
+    //   name: 'Français'
+    // }
+    // Español
+    // {
+    //   code: 'es',
+    //   iso: 'es',
+    //   file: 'es.json',
+    //   name: 'Español'
+    // },
+    // Italiana
+    // {
+    //   code: 'it',
+    //   iso: 'it',
+    //   file: 'it.json',
+    //   name: 'Italiana'
+    // },
+    // Bokmål
+    // {
+    //   code: 'nb',
+    //   iso: 'nb',
+    //   file: 'nb.json',
+    //   name: 'Bokmål'
+    // },
   ],
   defaultLocale: 'ja',
   fallbackLocale: 'ja',

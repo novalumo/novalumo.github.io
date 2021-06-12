@@ -77,11 +77,11 @@
             "2": "Privateca Politiko",
             "3": " "
         },
-        "send_button": "SEND",
-        "sending_message": "Sending...",
+        "send_button": "SENDI",
+        "sending_message": "Sendante...",
         "result": {
-            "submitted": "Submitted",
-            "comment": "We'll Check Your Message And Response It Soon."
+            "submitted": "Submetita.",
+            "comment": "Ni Kontrolos Vian Mesaĝon Kaj Respondos Ĝin Baldaŭ."
         }
     }
 }

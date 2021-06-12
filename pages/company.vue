@@ -28,7 +28,7 @@
                 <th>{{ $t('company.overview.name') }}</th>
                 <td>
                   <span><ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社</span><br>
-                  <span>{{ $t('company.overview.name_eng') }}：</span><span>Novalumo Japan G.K.</span>
+                  <span>{{ $t('company.overview.name_eng') }}:</span> <span>Novalumo Japan G.K.</span>
                 </td>
               </tr>
               <tr>

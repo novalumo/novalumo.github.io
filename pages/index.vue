@@ -3,7 +3,9 @@
 
     <!-- info -->
     <div class="info" v-if="showInfo">
-      <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i></p>
+      <p style="margin: 0;">
+        <i class="fas fa-fw fa-exclamation-circle"></i>
+      </p>
     </div>
 
     <!-- cover -->
@@ -19,6 +21,12 @@
             </div>
             <div v-if="this.lang == 'eo'">
               <p class="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
+            </div>
+            <div v-if="this.lang == 'de'">
+              <p class="text"><span>Novalumo ist</span> <span>eine Firma zur</span> <span>Schaffung einer neuen Welt.</span></p>
+            </div>
+            <div v-if="this.lang == 'fr'">
+              <p class="text"><span>Novalumo est</span> <span>une Compagnie de</span> <span>Création du Nouveau Monde.</span></p>
             </div>
             <!-- i18n -->
         </div>
