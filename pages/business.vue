@@ -43,6 +43,9 @@ export default {
   head() {
       return {
           title: this.$t('business.title'),
+          meta: [
+            // { hid: 'description', name: 'description', content: this.$t('business.description') }
+          ]
       }
   },
   mounted() {

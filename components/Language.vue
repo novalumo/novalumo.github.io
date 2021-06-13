@@ -32,7 +32,7 @@ export default {
     this.selectedLanguage = this.$i18n.locale
   },
   mounted() {
-    this.toggle()
+    this.toggleOnLoad() // 訪れたことがある場合はデフォルトで隠す
   },
   methods: {
     onChange(event) {
@@ -41,16 +41,23 @@ export default {
     toggle() {
       document.getElementById('langSwitch').style.transition = 'linear .1s'
       // Show
-      if (localStorage.getItem('LangBar') == null || localStorage.getItem('LangBar') == 0) {
+      if (document.getElementById('langSwitch').classList.contains('hidden')) {
         document.getElementById('langSwitch').style.transform = 'translateX(0%)'
         document.getElementById('hideArrow').style.transform = 'rotateZ(0deg)'
-        localStorage.setItem('LangBar', 1)
+        document.getElementById('langSwitch').classList.remove('hidden')
       // Hide
       } else {
         document.getElementById('langSwitch').style.transform = 'translateX(85%)'
         document.getElementById('hideArrow').style.transform = 'rotateZ(180deg)'
-        localStorage.setItem('LangBar', 0)
+        document.getElementById('langSwitch').classList.add('hidden')
       }
+    },
+    toggleOnLoad() {
+      if (localStorage.getItem('visited') != null) {
+        document.getElementById('langSwitch').style.transform = 'translateX(85%)'
+        document.getElementById('hideArrow').style.transform = 'rotateZ(180deg)'
+        document.getElementById('langSwitch').classList.add('hidden')
+      } 
     }
   }
 }

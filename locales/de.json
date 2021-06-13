@@ -9,7 +9,6 @@
             "title": "Über Novalumo",
             "company": "Firma",
             "business": "Geschäft",
-            "newsroom": "Nachrichten",
             "contact": "Kontakt"
         },
         "social": "Sozial",
@@ -21,6 +20,7 @@
     },
     "business": {
         "title": "Geschäft",
+        "description": "",
         "ict": {
             "title": "ICT-Einführungsunterstützung",
             "body": "Wir unterstützen die Einführung, den Betrieb und die Optimierung von ICT. Neben der Einrichtung und Installation von Computern entwickeln wir auch Human Resources, die Beratung, After-Sales-Support und Informationstechnologie übernehmen können."
@@ -41,6 +41,7 @@
     },
     "company": {
         "title": "Firma",
+        "description": "",
         "mission": {
             "title": "Mission",
             "body": "„Novalumo“ ist das internationale Hilfswort Esperanto und bedeutet „Neues Licht“. Dieses Wort enthält den Wunsch, „der Welt Licht zu geben und Menschen zum Lächeln zu bringen“. Unsere Mission ist es, vielen Menschen durch Informations- und Kommunikationstechnologie und Unterhaltung Mut, Hoffnung und ein Lächeln zu bringen."
@@ -64,6 +65,7 @@
     },
     "contact": {
         "title": "Kontakt",
+        "description": "",
         "required": "Erforderlich",
         "name": "Name",
         "company": "Firma",

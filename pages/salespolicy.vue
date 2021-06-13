@@ -131,6 +131,9 @@ export default {
   head() {
     return {
       title: '販売条件',
+      meta: [
+        // { hid: 'description', name: 'description', content: 'Recruit' },
+      ]
     }
   },
   data() {

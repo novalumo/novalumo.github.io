@@ -24,19 +24,19 @@ export default {
       name: 'Esperanto'
     },
     // Deutsch
-    // {
-    //   code: 'de',
-    //   iso: 'de',
-    //   file: 'de.json',
-    //   name: 'Deutsch'
-    // },
-    // // Français
-    // {
-    //   code: 'fr',
-    //   iso: 'fr',
-    //   file: 'fr.json',
-    //   name: 'Français'
-    // }
+    {
+      code: 'de',
+      iso: 'de',
+      file: 'de.json',
+      name: 'Deutsch'
+    },
+    // Français
+    {
+      code: 'fr',
+      iso: 'fr',
+      file: 'fr.json',
+      name: 'Français'
+    }
     // Español
     // {
     //   code: 'es',

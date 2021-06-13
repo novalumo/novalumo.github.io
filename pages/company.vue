@@ -78,7 +78,10 @@
 export default {
   head() {
     return {
-        title: this.$t('company.title'),
+      title: this.$t('company.title'),
+      meta: [
+        // { hid: 'description', name: 'description', content: this.$t('company.description') }
+      ]
     }
   },
 }

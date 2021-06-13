@@ -3,7 +3,7 @@ import i18n from './nuxt-i18n.config'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate:  '%s | Novalumo合同会社',
@@ -11,10 +11,14 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: 'Novalumo合同会社は、岩手県大船渡市にある「新世界創造会社」です。地域課題解決やメディア制作、イベント運営など幅広い事業を展開しています。' }
+      // { property: 'og:title', content: '' },
+      // { property: 'og:description', content: '' },
+      // { property: 'twitter:title', content: '' },
+      // { property: 'twitter:description', content: '' },
     ],
     link: [
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav.png' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' },
     ],
   },

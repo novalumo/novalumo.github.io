@@ -9,7 +9,6 @@
             "title": "About Novalumo",
             "company": "Company",
             "business": "Business",
-            "newsroom": "Newsroom",
             "contact": "Contact"
         },
         "social": "Social",
@@ -21,6 +20,7 @@
     },
     "business": {
         "title": "Business",
+        "description": "",
         "ict": {
             "title": "ICT Introduction Support",
             "body": "We support the introduction, operation, and optimization of ICT. In addition to setting and installing computers, we also develop human resources who can handle consulting, after-sales support, and information technology."
@@ -41,6 +41,7 @@
     },
     "company": {
         "title": "Company",
+        "description": "",
         "mission": {
             "title": "Mission",
             "body": "“Novalumo” is the international auxiliary word Esperanto, which means “New Light”. This word contains the desire to “give light to the world and make people smile.” Our mission is to bring courage, hope, and smiles to many people through information and communication technology, and entertainment."
@@ -64,6 +65,7 @@
     },
     "contact": {
         "title": "Contact",
+        "description": "",
         "required": "Required",
         "name": "Name",
         "company": "Company",

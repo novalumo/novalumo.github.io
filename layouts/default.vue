@@ -33,6 +33,16 @@ export default {
       ]
     }
   },
+  methods: {
+    visited() {
+      if (localStorage.getItem('visited') == null) {
+        localStorage.setItem('visited', 'true')
+      }
+    }
+  },
+  mounted() {
+    this.visited()
+  }
 }
 </script>
 

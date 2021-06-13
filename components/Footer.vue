@@ -1,14 +1,13 @@
 <template>
 <div>
     <footer>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row content">
                 <div class="col-md-4">
                     <ul>
                         <li class="footer-title">{{ $t('footer.about.title') }}</li>
                         <li><nuxt-link :to="localePath('/company/')">{{ $t('footer.about.company') }}</nuxt-link></li>
                         <li><nuxt-link :to="localePath('/business/')">{{ $t('footer.about.business') }}</nuxt-link></li>
-                        <li><a href="https://news.novalumo.llc/">{{ $t('footer.about.newsroom') }}</a></li>
                         <li><nuxt-link :to="localePath('/contact/')">{{ $t('footer.about.contact') }}</nuxt-link></li>
                     </ul>
                 </div>

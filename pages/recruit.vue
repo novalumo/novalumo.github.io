@@ -20,11 +20,15 @@
 
 <script>
 export default {
-    head() {
-        return {
-            title: '採用情報',
-        }
+  head() {
+    return {
+      title: '採用情報',
+      meta: [
+        // { hid: 'description', name: 'description', content: 'Recruit' },
+        { hid: 'robots', name: 'robots', content: 'noindex,nofollow' },
+      ]
     }
+  }
 }
 </script>
 

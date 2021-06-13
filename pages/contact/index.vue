@@ -58,6 +58,7 @@
                     <input type="checkbox" id="agree" v-model="agree">
                     <label for="agree">{{ $t('contact.agree.1') }}<nuxt-link :to="localePath('/privacy/')">{{ $t('contact.agree.2') }}</nuxt-link>{{ $t('contact.agree.3') }}</label>
                   </div>
+                  <!-- <div class="g-recaptcha" data-sitekey="6Lf33C0bAAAAAFCEQdx0Mk2wlGEbMEx1JJOgg3Gx" data-callback="onloadCallback"></div> -->
                 </div>
                 <div class="col-12">
                   <div class="submit">
@@ -79,6 +80,14 @@ export default {
   head() {
     return {
       title: this.$t('contact.title'),
+      meta: [
+        // { hid: 'description', name: 'description', content: this.$t('contact.description') },
+        { hid: 'robots', name: 'robots', content: 'nofollow' },
+      ],
+      script: [
+        // { src: '/js/recaptcha.js' },
+        // { src: 'https://www.google.com/recaptcha/api.js', async: '', defer: '' }
+      ]
     }
   },
   data() {
@@ -108,22 +117,21 @@ export default {
           message.style.opacity = '1'
           let input = document.getElementsByClassName('formInput')
           for(let i = 0; i < input.length; i++) {
-              input[i].disabled = true
+            input[i].disabled = true
           }
 
           let data = {
-              name: name,
-              company: company,
-              address: address,
-              email: email,
-              phone: phone,
-              title: title,
-              body: body,
+            name: name,
+            company: company,
+            address: address,
+            email: email,
+            phone: phone,
+            title: title,
+            body: body,
           }
       
           $.ajax({
               url: 'https://script.google.com/macros/s/AKfycbxcrVjKUQ5HJ1Fxpje4QI3sYGC4l6RkKnICH_YALhPETXU4WDWAucwC8q3t6vKTKudrfg/exec',
-              // url: '/',
               type: 'POST',
               data: data
           }).done(function(res){
@@ -140,8 +148,7 @@ export default {
               console.log('送信処理終了')
           })
       }
-      
-  }
+    },
   }
 }
 </script>
@@ -150,6 +157,7 @@ export default {
 .btn {
   background: #333;
   color: #fff;
+  margin: 10px 0 0 0;
 
   &.disabled {
     visibility: hidden;
@@ -226,7 +234,7 @@ input[readonly], textarea[readonly] {
 
 .chkbox {
   margin: 10px 0;
-  text-align: center;
+  // text-align: center;
 
   label {
     padding-left: 38px;
@@ -242,13 +250,14 @@ input[readonly], textarea[readonly] {
 
     &:before {
       content: '';
-      width: 1.2em;
-      height:	1.2em;
+      width: 24px;
+      height:	24px;
       display: inline-block;
       position: absolute;
       left:	0;
       background: #fff;
-      border: solid 1px #ccc;
+      border: solid 2px #ccc;
+      border-radius: 2px;
     }
 
   }
@@ -259,12 +268,10 @@ input[readonly], textarea[readonly] {
     &:checked + label:before {
       content: '\2713';
       color: #333;
+      font-size: 20px;
+      text-align: center;
     }
   }
-}
-
-.submit {
-  text-align: center;
 }
 
 #submitButton {

@@ -9,7 +9,6 @@
             "title": "Pri Novalumo",
             "company": "Kompanio",
             "business": "Komerco",
-            "newsroom": "Novaĵo",
             "contact": "Kontakto"
         },
         "social": "Socia",
@@ -21,6 +20,7 @@
     },
     "business": {
         "title": "Komerco",
+        "description": "",
         "ict": {
             "title": "ICT-Enkonduka Subteno",
             "body": "Ni subtenas la enkondukon, funkciadon kaj optimumigon de TIC. Krom agordi kaj instali komputilojn, ni ankaŭ disvolvas homajn rimedojn, kiuj povas pritrakti konsiladon, post-vendan subtenon kaj informan teknologion."
@@ -41,6 +41,7 @@
     },
     "company": {
         "title": "Kompanio",
+        "description": "",
         "mission": {
             "title": "Misio",
             "body": "“Novalumo” estas la internacia helpvorto Esperanto, kiu signifas “Nova Lumo”. Ĉi tiu vorto enhavas la deziron “lumigi la mondon kaj ridigi homojn.” Nia misio estas alporti kuraĝon, esperon kaj ridetojn al multaj homoj per informa kaj komunikada teknologio kaj amuzado."
@@ -64,6 +65,7 @@
     },
     "contact": {
         "title": "Kontakto",
+        "description": "",
         "required": "Bezonata",
         "name": "Nomo",
         "company": "Kompanio",
