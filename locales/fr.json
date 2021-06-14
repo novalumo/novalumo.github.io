@@ -19,7 +19,7 @@
         }
     },
     "business": {
-        "title": "Business",
+        "title": "Affaires",
         "description": "",
         "ict": {
             "title": "Aide à l'introduction des TIC",
@@ -40,7 +40,7 @@
         }
     },
     "company": {
-        "title": "Company",
+        "title": "Compagnie",
         "description": "",
         "mission": {
             "title": "Mission",
