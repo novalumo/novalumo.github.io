@@ -1,5 +1,5 @@
 <template>
-  <div class="row" id="langSwitch">
+  <div class="row hidden" id="langSwitch">
     <div>
       <i class="fas fa-fw fa-2x fa-angle-right" id="hideArrow" @click="toggle()"></i>
       <p class="about"><i class="fas fa-fw fa-globe"></i> Language</p>
@@ -53,11 +53,17 @@ export default {
       }
     },
     toggleOnLoad() {
-      if (localStorage.getItem('visited') != null) {
-        document.getElementById('langSwitch').style.transform = 'translateX(85%)'
-        document.getElementById('hideArrow').style.transform = 'rotateZ(180deg)'
-        document.getElementById('langSwitch').classList.add('hidden')
-      } 
+      const browserLang = (window.navigator.languages && window.navigator.languages[0]) ||
+        window.navigator.language ||
+        window.navigator.userLanguage ||
+        window.navigator.browserLanguage
+
+      // ユーザー言語と表示言語が違う場合は表示
+      if (browserLang != this.selectedLanguage) {
+        document.getElementById('langSwitch').style.transform = 'translateX(0%)'
+        document.getElementById('hideArrow').style.transform = 'rotateZ(0deg)'
+        document.getElementById('langSwitch').classList.remove('hidden')
+      }
     }
   }
 }
@@ -70,8 +76,9 @@ export default {
   left: 0;
   line-height: 0;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
+  transform: rotateZ(180deg);
+  // -webkit-transform: translateY(-50%);
+  // -ms-transform: translateY(-50%);
   transition: linear .2s;
 
   &:hover {
@@ -96,7 +103,8 @@ export default {
   margin: 0;
   display: flex;
   align-items: center;
-  will-change: transform;
+  // デフォルト非表示
+  transform: translateX(85%);
   z-index: 100;
 
   .about {

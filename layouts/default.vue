@@ -34,14 +34,14 @@ export default {
     }
   },
   methods: {
-    visited() {
+    setVisitFlg() {
       if (localStorage.getItem('visited') == null) {
         localStorage.setItem('visited', 'true')
       }
     }
   },
   mounted() {
-    this.visited()
+    this.setVisitFlg()
   }
 }
 </script>

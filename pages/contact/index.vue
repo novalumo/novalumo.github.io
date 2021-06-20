@@ -238,7 +238,7 @@ input[readonly], textarea[readonly] {
 
   label {
     padding-left: 38px;
-    line-height: 18px;
+    line-height: 21px;
     display: inline-block;
     cursor: pointer;
     position: relative;

@@ -8,29 +8,95 @@
       </p>
     </div>
 
-    <!-- cover -->
+    <!-- hero -->
     <div class="cover">
-        <div class="cover-body">
-            <h1 class="text">We Brighten <span>The World</span></h1>
-            <!-- i18n -->
-            <div v-if="this.lang == 'ja'">
-              <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
-            </div>
-            <div v-if="this.lang == 'en'">
-              <p class="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
-            </div>
-            <div v-if="this.lang == 'eo'">
-              <p class="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
-            </div>
-            <div v-if="this.lang == 'de'">
-              <p class="text"><span>Novalumo ist</span> <span>eine Firma zur</span> <span>Schaffung einer neuen Welt.</span></p>
-            </div>
-            <div v-if="this.lang == 'fr'">
-              <p class="text"><span>Novalumo est</span> <span>une Compagnie de</span> <span>Création du Nouveau Monde.</span></p>
-            </div>
-            <!-- i18n -->
+      <div class="cover-body">
+        <h1 class="text">We Brighten <span>The World</span></h1>
+        <!-- i18n -->
+        <div v-if="this.lang == 'ja'">
+          <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
         </div>
+        <div v-if="this.lang == 'en'">
+          <p class="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
+        </div>
+        <div v-if="this.lang == 'eo'">
+          <p class="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
+        </div>
+        <div v-if="this.lang == 'de'">
+          <p class="text"><span>Novalumo ist</span> <span>eine Firma zur</span> <span>Schaffung einer neuen Welt.</span></p>
+        </div>
+        <div v-if="this.lang == 'fr'">
+          <p class="text"><span>Novalumo est</span> <span>une Compagnie de</span> <span>Création du Nouveau Monde.</span></p>
+        </div>
+        <!-- i18n -->
+      </div>
     </div>
+
+    <!--
+    {{ /* news */}}
+    <div class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="">News</h1>
+            <p>最新情報はこちらです。</p>
+          </div>
+          <div class="col-md-8">
+            <dl>
+              {{ /* contents area */}}
+
+              {{ /* nlsample */ }}
+              <dd>
+                <nuxt-link :to="localePath('/news/a')" class="logo">
+                  <div>
+                    <span class="date">May 9, 2020</span>
+                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
+                    <span class="category release">ニュースリリース</span>
+                  </div>
+                  <div class="eyecatch">
+                    <img src="/img/news/default.jpg" alt="">
+                  </div>
+                </nuxt-link>
+              </dd>
+              {{ /* nlsample */ }}
+              
+              <dd>
+                <a href="#">
+                  <div>
+                    <span class="date">May 9, 2020</span>
+                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
+                    <span class="category release">ニュースリリース</span>
+                  </div>
+                  <div class="eyecatch">
+                    <img src="/img/news/default.jpg" alt="">
+                  </div>
+                </a>
+              </dd>
+              <dd>
+                <a href="#">
+                  <div>
+                    <span class="date">May 9, 2020</span>
+                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
+                    <span class="category info">お知らせ</span>
+                  </div>
+                </a>
+              </dd>
+              <dd>
+                <a href="#">
+                  <div>
+                    <span class="date">May 9, 2020</span>
+                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
+                    <span class="category media">メディア</span>
+                  </div>
+                </a>
+              </dd>
+              {{ /* contents area */}}
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
 
   </div>
 </template>
@@ -116,14 +182,5 @@ export default {
     left: 0;
     z-index: 0;
   }
-}
-
-.info {
-  padding: 10px 14px;
-  background: #dc3545;
-  color: #fff;
-  font-weight: bold;
-  user-select: none;
-  cursor: default;
 }
 </style>
