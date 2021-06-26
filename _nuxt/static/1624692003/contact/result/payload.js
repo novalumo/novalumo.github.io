@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/contact/result", {data:[{_img:{}}],fetch:{},mutations:void 0});
