@@ -17,6 +17,7 @@
     "nuxt-i18n": "^6.20.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.4.17",
     "@nuxt/types": "^2.15.6",
     "@nuxt/typescript-build": "^2.1.0",
     "fibers": "^5.0.0",

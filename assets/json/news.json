@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2020-04-30",
+    "title": "1番目",
+    "category": "release",
+    "img": "/img/news/default.jpg",
+    "file": "sample"
+  },
+  {
+    "date": "2021-06-26",
+    "title": "2番目",
+    "category": "info",
+    "img": "/img/news/default.jpg",
+    "file": ""
+  },
+  {
+    "date": "",
+    "title": "3番目",
+    "category": "media",
+    "img": "",
+    "file": ""
+  },
+  {
+    "date": "",
+    "title": "4番目",
+    "category": "",
+    "img": "",
+    "file": ""
+  }
+]

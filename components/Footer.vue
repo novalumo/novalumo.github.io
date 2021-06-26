@@ -35,7 +35,7 @@
     </div>
     
     <div class="copyright">
-      <span>Copyright &copy; Novalumo</span>, <span>All rights reserved.</span>
+      <span>&copy; 2020 Novalumo Japan G.K.</span>
     </div>
   </footer>
 </template>
@@ -46,6 +46,7 @@ footer {
   color: #333;
   border-top: solid 1px #ddd;
   font-weight: bold;
+  user-select: none;
 
   .copyright {
     width: 100%;

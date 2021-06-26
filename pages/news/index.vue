@@ -1,6 +1,10 @@
 <template>
-  <div>
-
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-12">
+        <news-card :limit="5"/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -8,6 +12,7 @@
 export default {
   head() {
     return {
+      title: 'ニュースルーム',
       meta: [
         { hid: 'robots', name: 'robots', content: 'noindex,nofollow' },
       ]

@@ -60,10 +60,15 @@ header {
   border-bottom: solid 1px #ddd;
   display: flex;
   z-index: 999;
+  user-select: none;
 
   .logo {
     display: flex;
     text-decoration: none;
+
+    img {
+      pointer-events: none;
+    }
   }
 }
 

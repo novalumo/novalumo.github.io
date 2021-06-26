@@ -32,80 +32,31 @@
       </div>
     </div>
 
-    <!--
-    {{ /* news */}}
-    <div class="news">
+    <!-- <div class="news">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <h1 class="">News</h1>
-            <p>最新情報はこちらです。</p>
+            <p>Novalumoからのお知らせ、最新情報はこちらです。</p>
           </div>
           <div class="col-md-8">
-            <dl>
-              {{ /* contents area */}}
-
-              {{ /* nlsample */ }}
-              <dd>
-                <nuxt-link :to="localePath('/news/a')" class="logo">
-                  <div>
-                    <span class="date">May 9, 2020</span>
-                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
-                    <span class="category release">ニュースリリース</span>
-                  </div>
-                  <div class="eyecatch">
-                    <img src="/img/news/default.jpg" alt="">
-                  </div>
-                </nuxt-link>
-              </dd>
-              {{ /* nlsample */ }}
-              
-              <dd>
-                <a href="#">
-                  <div>
-                    <span class="date">May 9, 2020</span>
-                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
-                    <span class="category release">ニュースリリース</span>
-                  </div>
-                  <div class="eyecatch">
-                    <img src="/img/news/default.jpg" alt="">
-                  </div>
-                </a>
-              </dd>
-              <dd>
-                <a href="#">
-                  <div>
-                    <span class="date">May 9, 2020</span>
-                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
-                    <span class="category info">お知らせ</span>
-                  </div>
-                </a>
-              </dd>
-              <dd>
-                <a href="#">
-                  <div>
-                    <span class="date">May 9, 2020</span>
-                    <p class="news-title">Novalumo合同会社 設立のお知らせ</p>
-                    <span class="category media">メディア</span>
-                  </div>
-                </a>
-              </dd>
-              {{ /* contents area */}}
-            </dl>
+            <news-card :limit="3"/>
           </div>
         </div>
       </div>
-    </div>
-    -->
+    </div> -->
 
   </div>
 </template>
 
 <script>
+import NewsCard from "~/components/NewsCard.vue"
+
 export default {
+  components: { NewsCard },
   data() {
     return {
-      lang: this.$i18n.localeProperties.code
+      lang: this.$i18n.localeProperties.code,
     }
   },
   head() {

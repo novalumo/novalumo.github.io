@@ -9,10 +9,10 @@
 
         <div class="container my-3">
           <div class="row mx-2">
-            <div class="col">
-              <article>
-                
-              <!-- info -->
+
+            <!-- info -->
+            <div class="col-12">
+              
               <div class="info" v-if="this.lang == 'en'">
                 <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> We are sorry that this page is not translated and available only in Japanese so far.</p>
               </div>
@@ -25,7 +25,18 @@
               <div class="info" v-if="this.lang == 'fr'">
                 <p style="margin: 0;"><i class="fas fa-fw fa-exclamation-circle"></i> Nous sommes désolés que cette page ne soit pas traduite et disponible uniquement en japonais jusqu'à présent.</p>
               </div>
-                
+            </div>
+
+            <!-- <div class="col-12">
+              <p style="font-size: 1.3rem;">
+                プライバシーは、全ての人々の基本的人権であると私たちは考えています。
+                必要以上の情報を取得せず、取得している情報はあなたに伝える義務があります。
+                少しでも安心して私たちのサービスをご利用いただくために、
+              </p>
+            </div> -->
+            
+            <div class="col-12">
+              <article>
               <p>
               Novalumo合同会社（以下、「当社」といいます。）は、本ウェブサイト上、及び当社で提供するサービス（以下、「本サービス」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
               </p>

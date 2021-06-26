@@ -13,7 +13,7 @@
     cursor: default;
 
     &:after {
-      background-color: #333;
+      background-color: #212529;
       border-radius: 2px;
       height: 4px;
       content: '';
@@ -25,81 +25,4 @@
     margin: 0 0 18px 0;
   }
 
-  dl {
-
-    dd {
-      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-      border: solid 1px #dedede;
-      border-radius: 8px;
-
-      &:not(:last-child) {
-        margin: 0 0 16px 0;
-      }
-
-      a {
-        color: inherit;
-        display: flex;
-        padding: 24px;
-        text-decoration: none;
-        transition: linear .1s;
-
-        .date {
-          color: #777;
-          display: block;
-          font-size: .85rem;
-        }
-  
-        p {
-          font-weight: bold;
-          margin: 0 0 8px 0;
-          line-height: 1.5;
-        }
-
-        .eyecatch {
-          margin: 0 0 0 8px;
-          justify-content: end;
-
-          img {
-            width: 100%;
-            max-width: 300px;
-            border: solid 1px #eee;
-            border-radius: 10px;
-            display: block;
-            user-select: none;
-            pointer-events: none;
-          }
-        }
-
-        .category {
-          padding: .2rem .4rem;
-          border-radius: 18px;
-          display: inline-block;
-          font-size: .75rem;
-          font-weight: bold;
-
-          &.release {
-            background: #da0f47;
-            color: #fff;
-          }
-
-          &.info {
-            background: #4158dd;
-            color: #fff;
-          }
-
-          &.media {
-            background: #f87f4f;
-            color: #fff;
-          }
-        }
-    
-        &:hover {
-          color: inherit;
-          opacity: .75;
-        }
-      }
-
-    }
-
-  }
 }
