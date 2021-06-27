@@ -48,9 +48,6 @@ export default {
           ]
       }
   },
-  mounted() {
-    //document.getElementById('midashi').classList.add('animate')
-  }
 }
 </script>
 

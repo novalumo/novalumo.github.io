@@ -3,15 +3,15 @@
     "date": "2020-04-30",
     "title": "1番目",
     "category": "release",
-    "img": "/img/news/default.jpg",
+    "img": "/docs/cover/default.jpg",
     "file": "sample"
   },
   {
     "date": "2021-06-26",
     "title": "2番目",
     "category": "info",
-    "img": "/img/news/default.jpg",
-    "file": ""
+    "img": "/docs/cover/default.jpg",
+    "file": "privacypolicy"
   },
   {
     "date": "",
