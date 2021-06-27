@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/fr/news", {data:[{_img:{"/_ipx/docs/cover/default.jpg?w=640&f=webp&q=100":"\u002F_nuxt\u002Fimage\u002F1bfd51.webp","/_ipx/docs/cover/default.jpg?w=200&f=webp&q=100":"\u002F_nuxt\u002Fimage\u002F09070b.webp","/_ipx/docs/cover/default.jpg?w=214&f=webp&q=100":"\u002F_nuxt\u002Fimage\u002F6011fb.webp"}}],fetch:{},mutations:void 0});
