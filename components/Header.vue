@@ -57,6 +57,7 @@ header {
   background: #fff;
   color: #333;
   padding: 0 0 0 20px;
+  border-top: solid 1px #ddd;
   border-bottom: solid 1px #ddd;
   display: flex;
   z-index: 999;
