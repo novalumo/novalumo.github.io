@@ -1,30 +1,30 @@
 [
   {
+    "id": "sample",
     "date": "2020-04-30",
     "title": "1番目",
     "category": "release",
-    "img": "/docs/cover/default.jpg",
-    "file": "sample"
+    "img": "/docs/cover/default.jpg"
   },
   {
+    "id": "privacypolicy",
     "date": "2021-06-26",
     "title": "2番目",
     "category": "info",
-    "img": "/docs/cover/default.jpg",
-    "file": "privacypolicy"
+    "img": "/docs/cover/default.jpg"
   },
   {
+    "id": "",
     "date": "",
     "title": "3番目",
     "category": "media",
-    "img": "",
-    "file": ""
+    "img": ""
   },
   {
+    "id": "",
     "date": "",
     "title": "4番目",
     "category": "",
-    "img": "",
-    "file": ""
+    "img": ""
   }
 ]

@@ -73,5 +73,6 @@ export default {
     id: 'GTM-538NQQ9',
     debug: false,
     pageTracking: true,
-  }
+  },
+  
 }
