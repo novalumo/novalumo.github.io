@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/eo/news/privacypolicy", {data:[{slug:"privacypolicy",_img:{}}],fetch:{},mutations:void 0});

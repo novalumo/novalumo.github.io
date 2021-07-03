@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/eo/news/sample", {data:[{slug:"sample",_img:{}}],fetch:{},mutations:void 0});
