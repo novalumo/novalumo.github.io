@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/news/sample4", (function(a){return {data:[{post:{id:"sample4",date:a,title:"4番目",category:a,img:a},_img:{}}],fetch:{},mutations:void 0}}("")));

@@ -1,0 +1,22 @@
+{
+  "name": "Novalumo Japan G.K.",
+  "short_name": "Novalumo",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "theme_color": "#f8f9fa",
+  "background_color": "#f8f9fa",
+  "description": "",
+  "icons":
+  [
+    {
+      "src": "/fav.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/fav.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
