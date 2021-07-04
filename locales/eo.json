@@ -52,15 +52,16 @@
             "name_eng": "La angla",
             "rep": "CEO",
             "rep_name": "Kento Shirasawa",
+            "capital": "Ĉefurbo",
+            "capital_price": "30,000 JPY",
             "est": "Fondita",
             "est_date": "30 aprilo 2020",
-            "capital": "Ĉefurbo",
-            "capital_price": "30,000 JPY"
-        },
-        "officer": {
-            "title": "Oficiro",
-            "ceo": "Kento Shirasawa",
-            "coo_1": "Satomi Shirasawa"
+            "officer": {
+                "ceo": "CEO",
+                "ceo_name": "Kento Shirasawa",
+                "coo_1": "COO",
+                "coo_name_1": "Satomi Shirasawa"
+            }
         }
     },
     "contact": {

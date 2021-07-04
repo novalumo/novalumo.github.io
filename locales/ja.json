@@ -49,17 +49,16 @@
             "title": "会社概要",
             "name": "会社名",
             "name_eng": "英語表記",
-            "rep": "代表社員",
-            "rep_name": "白澤 賢斗",
+            "capital": "資本金",
+            "capital_price": "30,000円",
             "est": "設立",
             "est_date": "2020年4月30日",
-            "capital": "資本金",
-            "capital_price": "30,000円"
-        },
-        "officer": {
-            "title": "役員",
-            "ceo": "白澤 賢斗",
-            "coo_1": "白澤 里美"
+            "officer": {
+                "ceo": "代表社員 / CEO",
+                "ceo_name": "白澤 賢斗",
+                "coo_1": "COO",
+                "coo_name_1": "白澤 里美"
+            }
         }
     },
     "contact": {

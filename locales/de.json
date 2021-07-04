@@ -52,15 +52,16 @@
             "name_eng": "Englisch",
             "rep": "CEO",
             "rep_name": "Kento Shirasawa",
+            "capital": "Hauptstadt",
+            "capital_price": "30,000 JPY",
             "est": "Gegründet",
             "est_date": "30. Apr. 2020",
-            "capital": "Hauptstadt",
-            "capital_price": "30,000 JPY"
-        },
-        "officer": {
-            "title": "Offizier",
-            "ceo": "Kento Shirasawa",
-            "coo_1": "Satomi Shirasawa"
+            "officer": {
+                "ceo": "CEO",
+                "ceo_name": "Kento Shirasawa",
+                "coo_1": "COO",
+                "coo_name_1": "Satomi Shirasawa"
+            }
         }
     },
     "contact": {

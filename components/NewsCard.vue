@@ -1,8 +1,8 @@
 <template>
   <dl>
     
-    <dd v-for="news in this.newsList.slice(0, this.limit)" :key="news.id">
-      <nuxt-link :to="localePath('/news/' + news.file)" class="logo">
+    <dd v-for="news in this.newsList" :key="news.id">
+      <nuxt-link :to="localePath('/news/' + news.id)" class="logo">
         <div>
           <span class="date">{{ getEnglishDate(news.date) }}</span>
           <p class="news-title">{{ news.title }}</p>
@@ -40,6 +40,7 @@ export default {
   data() {
     return {
       newsList: newsData
+      //.slice(0, this.limit)
     }
   },
   methods: {
@@ -64,9 +65,6 @@ export default {
     },
   },
   mounted() {
-    // Object.values(this.newsList.slice(0, 3)).forEach(function (key) {
-    //   console.log(key.title)
-    // })
   }
   
 }
@@ -76,6 +74,7 @@ export default {
 dl {
 
   dd {
+    background: #fff;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     border: solid 1px #efefef;
     border-radius: 8px;
@@ -95,6 +94,7 @@ dl {
         color: #777;
         display: block;
         font-size: .85rem;
+        font-weight: bold;
       }
 
       p {
@@ -121,6 +121,7 @@ dl {
         display: inline-block;
         font-size: .75rem;
         font-weight: bold;
+
         // default
         background: #eee;
         color: #333;

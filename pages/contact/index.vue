@@ -201,6 +201,7 @@ label {
 }
 
 input, textarea {
+  background: transparent;
   display: block;
   width: 100%;
   padding: .375rem .75rem;
@@ -208,7 +209,6 @@ input, textarea {
   font-size: 1.3rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
   background-clip: padding-box;
   border: none;
   border-bottom: 1px solid #ced4da;
@@ -222,7 +222,6 @@ input, textarea {
 
 input:focus, textarea:focus {
   color: #495057;
-  background: #fff;
   border-bottom: solid 1px #272727;
   outline: 0;
 }
@@ -255,7 +254,7 @@ input[readonly], textarea[readonly] {
       display: inline-block;
       position: absolute;
       left:	0;
-      background: #fff;
+      background: transparent;
       border: solid 2px #ccc;
       border-radius: 2px;
     }

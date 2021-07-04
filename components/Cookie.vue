@@ -1,88 +1,47 @@
 <template>
-  <div class="cookie row">
-    <div class="col-md-10 description">
-      <p class="about">Cookie（クッキー）について</p>
-      <p>
-        お客様に快適にウェブサイトをご利用いただくため、Cookie（クッキー）を利用しています。
-        Cookie（クッキー）の使用方法の詳細については、 <nuxt-link to="/privacy">プライバシーポリシー</nuxt-link>を参照してください。
-      </p>
-    </div>
-    <div class="col-md-2 buttons">
-      <div>
-        <button @click="cookie = false">同意する</button>
-        <button @click="cookie = false" class="dont">同意しない</button>
-      </div>
-    </div>
+
+  <div class="cookie" id="cookie">
+    <p>
+      お客様に快適にウェブサイトをご利用いただくため、Cookie（クッキー）を利用しています。
+      Cookieの使用方法の詳細については、 <nuxt-link to="/privacy">プライバシーポリシー</nuxt-link>を参照してください。
+    </p>
   </div>
+
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      cookie: false
-    }
-  },
-  methods: {
-
-  }
 }
 </script>
 
 <style lang="scss" scoped>
 .cookie {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  margin: 0 24px;
   background: #fff;
-  display: flex;
   border: solid 1px #eee;
-  border-radius: 18px 18px 0 0;
+  border-radius: 32px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-  padding: 18px;
-  margin: 0;
+  text-align: center;
   z-index: 300;
+  cursor: pointer;
+  transition: linear .1s;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  .hide {
+    display: none;
+  }
 
   p {
     margin: 0;
-    font-size: 14px;
-  }
-
-  .about {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  button {
-    background: #333;
-    color: #fff;
-    border: solid 1px #ccc;
     padding: 10px;
-    width: 100%;
-    margin: 0 0 4px 0;
-    transition: .2s;
-
-    &:not(.dont):hover {
-      opacity: .8;
-    }
+    font-size: .75rem;
   }
-
-  .dont {
-    border: none;
-    background: transparent;
-    color: #000;
-    margin: 0;
-
-    &:hover {
-      background: #ccc;
-    }
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
 }
 </style>

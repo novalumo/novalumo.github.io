@@ -1,24 +1,15 @@
-/*!
- *
- * News
- *
- */
+// 
+// News
+// 
 
 .news {
-  margin: 2rem 0 1.5rem 0;
+  padding: 2rem 0 1.5rem 0;
 
   h1 {
     font-family: Comfortaa;
     font-weight: bold;
     cursor: default;
-
-    &:after {
-      background-color: #212529;
-      border-radius: 2px;
-      height: 4px;
-      content: '';
-      display: block;
-    }
+    margin: 0;
   }
 
   p {

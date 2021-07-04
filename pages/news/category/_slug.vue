@@ -9,8 +9,7 @@
             <p class="date">{{ getEnglishDate(this.post.date) }}</p>
             <h1 class="post-title">{{ this.post.title }}</h1>
             
-            <!-- :href="'/news/category/' + this.post.category" -->
-              <a class="category" :class="this.post.category">
+              <a :href="'/news/category/' + this.post.category" class="category" :class="this.post.category">
                 <span v-if="this.post.category === 'release'">ニュースリリース</span>
                 <span v-else-if="this.post.category === 'info'">お知らせ</span>
                 <span v-else-if="this.post.category === 'media'">メディア</span>
@@ -78,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 .news-page {
-  background: #fafafa;
+  background: #f3f3f3;
 }
 
 article {

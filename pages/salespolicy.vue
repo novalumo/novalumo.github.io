@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div class="container my-3">
+    <div class="container py-3">
       <div class="row mx-2">
         <div class="col">
           <article>

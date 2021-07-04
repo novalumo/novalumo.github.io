@@ -1,13 +1,13 @@
 <template>
 <div>
-    <Header />
-    <div id="overlay"></div>
-    <transition name="page">
-      <Nuxt />
-    </transition>
-    <Footer />
-    <Language />
-    <!-- <Cookie /> -->
+  <Header />
+  <div id="overlay"></div>
+  <transition name="page">
+    <Nuxt />
+  </transition>
+  <Footer />
+  <Language />
+  <!-- <Cookie /> -->
 </div>
 </template>
 
