@@ -6,20 +6,25 @@
 
         <article>
           <div class="post-header">
-            <p class="date">{{ getEnglishDate(this.post.date) }}</p>
+            <p class="date">{{ $getEnglishDate(this.post.date) }}</p>
             <h1 class="post-title">{{ this.post.title }}</h1>
             
-            <!-- :href="'/news/category/' + this.post.category" -->
               <a class="category" :class="this.post.category">
                 <span v-if="this.post.category === 'release'">ニュースリリース</span>
                 <span v-else-if="this.post.category === 'info'">お知らせ</span>
                 <span v-else-if="this.post.category === 'media'">メディア</span>
                 <span v-else>その他</span>
               </a>
-              
+
+              <!-- <nuxt-link :to="localePath('/news/category/' + this.post.category)" class="category" :class="this.post.category">
+                <span v-if="this.post.category === 'release'">ニュースリリース</span>
+                <span v-else-if="this.post.category === 'info'">お知らせ</span>
+                <span v-else-if="this.post.category === 'media'">メディア</span>
+                <span v-else>その他</span>
+              </nuxt-link> -->
             
           </div>
-          <iframe :src="'/docs/' + this.post.id + '.md?' + this.post.id" frameborder="0" style="width:100%; height: 95vh; border: solid 1px #ccc;"></iframe>
+          <iframe :src="'/docs/' + this.post.id + '.md'" frameborder="0" style="width:100%; height: 95vh; border: solid 1px #ccc;"></iframe>
         </article>
 
       </div>
@@ -30,6 +35,7 @@
 
 <script>
 import newsData from '@/assets/json/news.json'
+const titleTemplate = ' | Novalumo合同会社'
 
 export default {
   async asyncData({ params }) {
@@ -44,34 +50,30 @@ export default {
   head() {
     return {
       title: this.post.title,
-      meta: [
+      meta:
+      [
         { hid: 'robots', name: 'robots', content: 'noindex,nofollow' },
+        { hid: 'description', name: 'description', content: this.post.description },
+        { property: 'og:description', name: 'description', content: this.post.description },
+        { property: 'twitter:description', name: 'description', content: this.post.description },
+        { property: 'og:title', content: this.post.title + titleTemplate },
+        { property: 'twitter:title', content: this.post.title + titleTemplate },
+        { property: 'og:image', content: this.$getSiteUrl() + this.post.img },
+        { property: 'twitter:image', content: this.$getSiteUrl() + this.post.img },
       ]
     }
   },
   mounted() {
+    let here = window.location.origin
+    let file = '/docs/' + this.post.id + '.md'
+    let url = here + file
+    if (this.$is404(url) === 404) {
+      location.href = '/'
+    }
     location.href = '/'
   },
   methods: {
-    getEnglishDate(val)
-    {
-      let date = new Date(val)
-      if (date.toString() !== 'Invalid Date')
-      {
-        const list = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
-        let month = date.getMonth()
-        let month_english = list[month]
-
-        let day  = date.getDate()
-        let year = date.getFullYear()
-
-        return month_english + ' ' + day + ', ' + year
-      }
-      
-      return ''
-      
-    },
   },
 }
 </script>

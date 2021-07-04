@@ -27,40 +27,39 @@
             </div>
 
             <!-- cancel policy -->
-            <h2 class="heading">キャンセルについて</h2>
+            <h3>キャンセルについて</h3>
             <p>
-              当社では合理的に事業を行うことを目的として、当社の製品に限りキャンセルポリシーを設定しています。
-              各種制作依頼等をいただく際には、当社が提示するポリシーへの同意が必要となりますことにご留意ください。
-              その他、ご不明な点がございましたらご連絡ください。
+              当社へ各種制作依頼等をいただく際には、別途当社が提示するキャンセルポリシーへの同意が必要となります。
+              お客様都合によるキャンセルが発生した場合、手数料等が発生する場合がありますことにご留意ください。
             </p>
 
             <!-- specified commercial transaction act -->
-            <h2 class="heading">特定商取引法に基づく表示</h2>
+            <h3>特定商取引法に基づく表示</h3>
 
-            <h3>販売業者</h3>
+            <h4>販売業者</h4>
             <p>{{info.company}}</p>
 
-            <h3>業務責任者</h3>
+            <h4>業務責任者</h4>
             <p>{{info.staff}}</p>
 
-            <h3>所在地</h3>
+            <h4>所在地</h4>
             <p class="noselect">〒{{info.zipcode}}<br>{{info.address}}</p>
 
-            <h3>電話番号</h3>
+            <h4>電話番号</h4>
             <p class="noselect">{{info.tel}}</p>
 
-            <h3>メールアドレス</h3>
+            <h4>メールアドレス</h4>
             <p class="noselect">{{info.email}}</p>
 
-            <h3>お支払方法</h3>
+            <h4>お支払方法</h4>
             <!--
               代引き、銀行振込、郵便振込、クレジットカードなど、自分のネットショップで扱う支払方法を表示します。
             -->
             <p>
-              クレジットカード(Stripe決済システムを使用)、銀行振込、PayPal
+              クレジットカード(<a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">Stripe</a>決済システムを使用)、銀行振込、PayPal
             </p>
 
-            <h3>お支払期限</h3>
+            <h4>お支払期限</h4>
             <!--
               後払いの支払いは納品より何日以内、前払いの場合は注文日より何日以内かを表示します。
             -->
@@ -69,7 +68,7 @@
               銀行振込：ご注文後7日以内
             </p>
 
-            <h3>商品代金以外の必要料金</h3>
+            <h4>商品代金以外の必要料金</h4>
             <!--
               商品代金以外にかかる料金（送料、消費税、手数料など）を全て表示します。
               ※クレジットカード決済の手数料は、購入者負担にできません。その旨を記載しないようにご注意ください。
@@ -151,27 +150,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-table {
-  width: 100%;
-  margin: 14px 0 14px 0;
-  border-collapse: collapse;
-}
-tr {
-  border-bottom: solid 1px #ddd;
-}
-th, td {
-  text-align: left;
-  vertical-align: middle;
-  padding: 20px 0;
-}
-th span, td span {
-  display: inline-block;
+h3 {
+  margin: 32px 0;
 }
 
 article {
-  font-weight: lighter;
-  line-height: 200%;
   letter-spacing: 1px;
+
+  p, ol, ul {
+    font-size: 1.1rem;
+    line-height: 2;
+    margin: 0 0 18px 0;
+  }
 }
 a {
   text-decoration: none;

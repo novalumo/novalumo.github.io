@@ -7,13 +7,13 @@
       </nuxt-link>
       <ul class="header-menu">
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}<!-- Business<span>事業紹介</span> --></nuxt-link>
+            <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
         </li>
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}<!-- Company<span>会社情報</span> --></nuxt-link>
+            <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
         </li>
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}<!-- Contact<span>お問い合わせ</span> --></nuxt-link>
+            <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
         </li>
       </ul>
       <div class="menu-opener">
@@ -33,13 +33,13 @@
       </div>
       <ul class="header-menu-sp">
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}<!-- Business<span>事業紹介</span> --></nuxt-link>
+              <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
           </li>
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}<!-- Company<span>会社情報</span> --></nuxt-link>
+              <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
           </li>
           <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}<!-- Contact<span>お問い合わせ</span> --></nuxt-link>
+              <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
           </li>
       </ul>
     </div>

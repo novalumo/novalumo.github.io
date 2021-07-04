@@ -40,7 +40,7 @@
             <p>Novalumoからのお知らせ、最新情報はこちらです。</p>
           </div>
           <div class="col-md-8">
-            <news-card :limit="3"/>
+            <news-card :limit="5"/>
           </div>
         </div>
       </div>
@@ -51,6 +51,7 @@
 
 <script>
 import NewsCard from "~/components/NewsCard.vue"
+const topPageTitle = 'Novalumo合同会社 | A New World Creation Company'
 
 export default {
   components: { NewsCard },
@@ -62,7 +63,13 @@ export default {
   head() {
     return {
       titleTemplate: '',
-      title: 'Novalumo合同会社 | A New World Creation Company',
+      title: topPageTitle,
+      meta:
+      [
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: topPageTitle },
+        { property: 'twitter:title', content: topPageTitle },
+      ]
     }
   },
   computed: {

@@ -4,7 +4,7 @@
     <dd v-for="news in this.newsList" :key="news.id">
       <nuxt-link :to="localePath('/news/' + news.id)" class="logo">
         <div>
-          <span class="date">{{ getEnglishDate(news.date) }}</span>
+          <span class="date">{{ $getEnglishDate(news.date) }}</span>
           <p class="news-title">{{ news.title }}</p>
           <span class="category" :class="news.category">
             <div v-if="news.category === 'release'">ニュースリリース</div>
@@ -39,30 +39,10 @@ export default {
   },
   data() {
     return {
-      newsList: newsData
-      //.slice(0, this.limit)
+      newsList: newsData.slice(0, this.limit)
     }
   },
   methods: {
-    getEnglishDate(val)
-    {
-      let date = new Date(val)
-      if (date.toString() !== 'Invalid Date')
-      {
-        const list = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-
-        let month = date.getMonth()
-        let month_english = list[month]
-
-        let day  = date.getDate()
-        let year = date.getFullYear()
-
-        return month_english + ' ' + day + ', ' + year
-      }
-      
-      return ''
-      
-    },
   },
   mounted() {
   }

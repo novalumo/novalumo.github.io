@@ -22,7 +22,7 @@
 export default {
   head() {
     return {
-      title: 'お問い合わせ - 送信完了',
+      title: this.$t('contact.result.submitted'),
       meta: [
         { hid: 'robots', name: 'robots', content: 'noindex,nofollow' },
       ]
