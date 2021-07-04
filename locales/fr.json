@@ -80,11 +80,11 @@
             "2": "Politique de Confidentialité",
             "3": " "
         },
-        "send_button": "SEND",
-        "sending_message": "Sending...",
+        "send_button": "ENVOYER",
+        "sending_message": "Envoi en cours...",
         "result": {
-            "submitted": "Submitted",
-            "comment": "We'll Check Your Message And Response It Soon."
+            "submitted": "Soumis.",
+            "comment": "Nous vérifierons votre message et y répondrons bientôt."
         }
     }
 }

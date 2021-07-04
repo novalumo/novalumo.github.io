@@ -42,7 +42,7 @@
 
 <style lang="scss" scoped>
 footer {
-  background: #fefefe;
+  background: #f8f8f8;
   color: #333;
   border-top: solid 1px #ddd;
   font-weight: bold;
@@ -51,7 +51,6 @@ footer {
   .copyright {
     width: 100%;
     padding: 10px 0;
-    background: rgba(245, 245, 245, 0.5);
     color: #777;
     font-size: .8rem;
     border-top: solid 1px #ddd;
@@ -100,7 +99,7 @@ footer {
 @media (max-width: 777px) {
   footer {
     .copyright {
-      padding: 10px 0 env(safe-area-inset-bottom) 0;
+      padding: 10px 0 calc(env(safe-area-inset-bottom) + 10px) 0;
     }
   }
 }

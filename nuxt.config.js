@@ -18,7 +18,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/fav.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/icon.png' },
       { rel: 'manifest', href: '/manifest.webmanifest' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css' },
     ],
