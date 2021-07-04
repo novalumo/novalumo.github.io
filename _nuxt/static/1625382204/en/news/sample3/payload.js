@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/news/sample3", (function(a){return {data:[{post:{id:"sample3",date:a,title:"3番目ですよおおおおおおおおおおおおおおおおおおおおおおおおおおおお",category:"media",img:a},_img:{}}],fetch:{},mutations:void 0}}("")));
