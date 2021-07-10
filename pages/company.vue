@@ -21,12 +21,12 @@
           </article>
 
           <!-- about -->
-          <h2 class="heading">{{ $t('company.overview.title') }}</h2>
+          <h2 class="heading">{{ $t('company.summary.title') }}</h2>
           <table>
             <tbody>
               <!-- company name -->
               <tr>
-                <th>{{ $t('company.overview.name') }}</th>
+                <th>{{ $t('company.summary.name') }}</th>
                 <td v-if="this.lang === 'ja'">
                   <ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社<br>
                 </td>
@@ -36,33 +36,33 @@
               </tr>
               <!-- capital -->
               <tr>
-                <th>{{ $t('company.overview.capital') }}</th>
-                <td>{{ $t('company.overview.capital_price') }}</td>
+                <th>{{ $t('company.summary.capital') }}</th>
+                <td>{{ $t('company.summary.capital_price') }}</td>
               </tr>
               <!-- establish -->
               <tr>
-                <th>{{ $t('company.overview.est') }}</th>
-                <td>{{ $t('company.overview.est_date') }}</td>
+                <th>{{ $t('company.summary.est') }}</th>
+                <td>{{ $t('company.summary.est_date') }}</td>
               </tr>
               <!-- officer -->
               <tr>
                 <th>
-                  <span title="最高経営責任者">{{ $t('company.overview.officer.ceo') }}</span>
+                  <span title="最高経営責任者">{{ $t('company.summary.officer.ceo') }}</span>
                 </th>
-                <td>{{ $t('company.overview.officer.ceo_name') }} <small><a href="https://siraken.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-external-link-alt"></i></a></small></td>
+                <td>{{ $t('company.summary.officer.ceo_name') }} <small><a href="https://siraken.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-external-link-alt"></i></a></small></td>
               </tr>
               <tr>
-                <th><span title="最高執行責任者">{{ $t('company.overview.officer.coo_1') }}</span></th>
-                <td>{{ $t('company.overview.officer.coo_name_1') }}</td>
+                <th><span title="最高執行責任者">{{ $t('company.summary.officer.coo_1') }}</span></th>
+                <td>{{ $t('company.summary.officer.coo_name_1') }}</td>
               </tr>
               <!-- business -->
               <tr>
-                <th>{{ $t('company.overview.business.title') }}</th>
+                <th>{{ $t('company.summary.service.title') }}</th>
                 <td>
-                  {{ $t('business.ict.title') }}<br>
-                  {{ $t('business.system.title') }}<br>
-                  {{ $t('business.contents.title') }}<br>
-                  {{ $t('business.management.title') }}
+                  {{ $t('service.ict.title') }}<br>
+                  {{ $t('service.system.title') }}<br>
+                  {{ $t('service.contents.title') }}<br>
+                  {{ $t('service.management.title') }}
                 </td>
               </tr>
             </tbody>

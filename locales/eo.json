@@ -1,6 +1,6 @@
 {
     "header": {
-        "business": "Komerco",
+        "service": "Komerco",
         "company": "Kompanio",
         "contact": "Kontakto"
     },
@@ -8,7 +8,7 @@
         "about": {
             "title": "Pri Novalumo",
             "company": "Kompanio",
-            "business": "Komerco",
+            "service": "Komerco",
             "contact": "Kontakto"
         },
         "social": "Socia",
@@ -18,7 +18,7 @@
             "sales": "Vendpolitiko"
         }
     },
-    "business": {
+    "service": {
         "title": "Komerco",
         "description": "",
         "ict": {
@@ -46,7 +46,7 @@
             "title": "Misio",
             "body": "“Novalumo” estas la internacia helpvorto Esperanto, kiu signifas “Nova Lumo”. Ĉi tiu vorto enhavas la deziron “lumigi la mondon kaj ridigi homojn.” Nia misio estas alporti kuraĝon, esperon kaj ridetojn al multaj homoj per informa kaj komunikada teknologio kaj amuzado."
         },
-        "overview": {
+        "summary": {
             "title": "Superrigardo",
             "name": "Nomo",
             "rep": "CEO",
@@ -61,7 +61,7 @@
                 "coo_1": "COO",
                 "coo_name_1": "Satomi Shirasawa"
             },
-            "business": {
+            "service": {
                 "title": "Komerco"
             }
         }

@@ -2,7 +2,7 @@
     <div>
         <div class="title">
           <div class="title-body">
-            <h1>Business</h1>
+            <h1>Service</h1>
             <p>事業紹介</p>
           </div>
         </div>
@@ -11,24 +11,24 @@
           <div class="row mx-2">
             <div class="col">
               <article>
-                <h2 class="heading text">{{ $t('business.ict.title') }}</h2>
+                <h2 class="heading text">{{ $t('service.ict.title') }}</h2>
                 <p>
-                  {{ $t('business.ict.body') }}
+                  {{ $t('service.ict.body') }}
                 </p>
 
-                <h2 class="heading text">{{ $t('business.system.title') }}</h2>
+                <h2 class="heading text">{{ $t('service.system.title') }}</h2>
                 <p>
-                  {{ $t('business.system.body') }}
+                  {{ $t('service.system.body') }}
                 </p>
 
-                <h2 class="heading text">{{ $t('business.contents.title') }}</h2>
+                <h2 class="heading text">{{ $t('service.contents.title') }}</h2>
                 <p>
-                  {{ $t('business.contents.body') }}
+                  {{ $t('service.contents.body') }}
                 </p>
 
-                <h2 class="heading text">{{ $t('business.management.title') }}</h2>
+                <h2 class="heading text">{{ $t('service.management.title') }}</h2>
                 <p>
-                  {{ $t('business.management.body') }}
+                  {{ $t('service.management.body') }}
                 </p>
 
               </article>
@@ -42,9 +42,9 @@
 export default {
   head() {
     return {
-      title: this.$t('business.title'),
+      title: this.$t('service.title'),
       meta: [
-        // { hid: 'description', name: 'description', content: this.$t('business.description') }
+        // { hid: 'description', name: 'description', content: this.$t('service.description') }
       ]
     }
   },

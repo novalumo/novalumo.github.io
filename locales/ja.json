@@ -1,6 +1,6 @@
 {
     "header": {
-        "business": "Business",
+        "service": "Service",
         "company": "Company",
         "contact": "Contact"
     },
@@ -8,7 +8,7 @@
         "about": {
             "title": "Novalumoについて",
             "company": "会社情報",
-            "business": "事業紹介",
+            "service": "事業紹介",
             "contact": "お問い合わせ"
         },
         "social": "ソーシャル",
@@ -18,7 +18,7 @@
             "sales": "販売条件"
         }
     },
-    "business": {
+    "service": {
         "title": "事業紹介",
         "description": "Novalumoが行っている事業を紹介します。",
         "ict": {
@@ -45,7 +45,7 @@
             "title": "ミッション",
             "body": "“Novalumo”（ノバルーモ） は、国際補助語であるエスペラントで「新しい（Nova）光（Lumo）」という意味があります。 この言葉には「世界中に光を与え、人々を笑顔にしたい」という想いが込められています。 情報通信技術やエンターテインメントを通じて、多くの人々に勇気や希望、そして笑顔を届けることが、私たちの使命です。"
         },
-        "overview": {
+        "summary": {
             "title": "会社概要",
             "name": "会社名",
             "capital": "資本金",
@@ -58,7 +58,7 @@
                 "coo_1": "COO",
                 "coo_name_1": "白澤 里美"
             },
-            "business": {
+            "service": {
                 "title": "事業内容"
             }
         }

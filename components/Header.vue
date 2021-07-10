@@ -7,7 +7,7 @@
       </nuxt-link>
       <ul class="header-menu">
         <li class="header-menu-item">
-          <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
+          <nuxt-link :to="localePath('/service/')">{{$t('header.service')}}</nuxt-link>
         </li>
         <li class="header-menu-item">
           <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
@@ -32,7 +32,7 @@
       </div>
       <ul class="header-menu-sp">
         <li class="header-menu-item-sp">
-          <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
+          <nuxt-link :to="localePath('/service/')">{{$t('header.service')}}</nuxt-link>
         </li>
         <li class="header-menu-item-sp">
           <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>

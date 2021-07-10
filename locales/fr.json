@@ -1,6 +1,6 @@
 {
     "header": {
-        "business": "Affaires",
+        "service": "Affaires",
         "company": "Compagnie",
         "contact": "Contacter"
     },
@@ -8,7 +8,7 @@
         "about": {
             "title": "À propos de Novalumo",
             "company": "Compagnie",
-            "business": "Affaires",
+            "service": "Affaires",
             "contact": "Contacter"
         },
         "social": "Social",
@@ -18,7 +18,7 @@
             "sales": "Politique de Vente"
         }
     },
-    "business": {
+    "service": {
         "title": "Affaires",
         "description": "",
         "ict": {
@@ -46,7 +46,7 @@
             "title": "Mission",
             "body": "“Novalumo” est le mot de international espéranto, qui signifie “Nouvelle Lumière”. Ce mot contient le désir de « donner de la lumière au monde et faire sourire les gens ». Notre mission est d'apporter du courage, de l'espoir et des sourires à de nombreuses personnes grâce aux technologies de l'information et de la communication et au divertissement."
         },
-        "overview": {
+        "summary": {
             "title": "Aperçu",
             "name": "Nom",
             "rep": "CEO",
@@ -61,7 +61,7 @@
                 "coo_1": "COO",
                 "coo_name_1": "Satomi Shirasawa"
             },
-            "business": {
+            "service": {
                 "title": "Affaires"
             }
         }

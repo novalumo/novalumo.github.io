@@ -7,8 +7,8 @@
         <div class="col-md-4">
           <ul>
             <li class="footer-title">{{ $t('footer.about.title') }}</li>
+            <li><nuxt-link :to="localePath('/service/')">{{ $t('footer.about.service') }}</nuxt-link></li>
             <li><nuxt-link :to="localePath('/company/')">{{ $t('footer.about.company') }}</nuxt-link></li>
-            <li><nuxt-link :to="localePath('/business/')">{{ $t('footer.about.business') }}</nuxt-link></li>
             <li><nuxt-link :to="localePath('/contact/')">{{ $t('footer.about.contact') }}</nuxt-link></li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 {
     "header": {
-        "business": "Geschäft",
+        "service": "Geschäft",
         "company": "Firma",
         "contact": "Kontakt"
     },
@@ -8,7 +8,7 @@
         "about": {
             "title": "Über Novalumo",
             "company": "Firma",
-            "business": "Geschäft",
+            "service": "Geschäft",
             "contact": "Kontakt"
         },
         "social": "Sozial",
@@ -18,7 +18,7 @@
             "sales": "Verkaufspolitik"
         }
     },
-    "business": {
+    "service": {
         "title": "Geschäft",
         "description": "",
         "ict": {
@@ -46,7 +46,7 @@
             "title": "Mission",
             "body": "„Novalumo“ ist das internationale Hilfswort Esperanto und bedeutet „Neues Licht“. Dieses Wort enthält den Wunsch, „der Welt Licht zu geben und Menschen zum Lächeln zu bringen“. Unsere Mission ist es, vielen Menschen durch Informations- und Kommunikationstechnologie und Unterhaltung Mut, Hoffnung und ein Lächeln zu bringen."
         },
-        "overview": {
+        "summary": {
             "title": "Überblick",
             "name": "Name",
             "rep": "CEO",
@@ -61,7 +61,7 @@
                 "coo_1": "COO",
                 "coo_name_1": "Satomi Shirasawa"
             },
-            "business": {
+            "service": {
                 "title": "Geschäft"
             }
         }

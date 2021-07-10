@@ -1,6 +1,6 @@
 {
     "header": {
-        "business": "Business",
+        "service": "service",
         "company": "Company",
         "contact": "Contact"
     },
@@ -8,7 +8,7 @@
         "about": {
             "title": "About Novalumo",
             "company": "Company",
-            "business": "Business",
+            "service": "service",
             "contact": "Contact"
         },
         "social": "Social",
@@ -18,8 +18,8 @@
             "sales": "Sales Policy"
         }
     },
-    "business": {
-        "title": "Business",
+    "service": {
+        "title": "service",
         "description": "",
         "ict": {
             "title": "ICT Introduction Support",
@@ -46,8 +46,8 @@
             "title": "Mission",
             "body": "“Novalumo” is the international auxiliary word Esperanto, which means “New Light”. This word contains the desire to “give light to the world and make people smile.” Our mission is to bring courage, hope, and smiles to many people through information and communication technology, and entertainment."
         },
-        "overview": {
-            "title": "Overview",
+        "summary": {
+            "title": "Summary",
             "name": "Name",
             "rep": "CEO",
             "rep_name": "Kento Shirasawa",
@@ -61,8 +61,8 @@
                 "coo_1": "COO",
                 "coo_name_1": "Satomi Shirasawa"
             },
-            "business": {
-                "title": "Business"
+            "service": {
+                "title": "business"
             }
         }
     },
