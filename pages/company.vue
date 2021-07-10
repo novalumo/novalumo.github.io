@@ -108,7 +108,7 @@ tr {
 }
 th, td {
   text-align: left;
-  line-height: 1.8;
+  line-height: 2;
   vertical-align: middle;
   padding: 20px 0;
 }
