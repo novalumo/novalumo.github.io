@@ -48,7 +48,6 @@
         "overview": {
             "title": "会社概要",
             "name": "会社名",
-            "name_eng": "英語表記",
             "capital": "資本金",
             "capital_price": "30,000円",
             "est": "設立",
@@ -58,6 +57,9 @@
                 "ceo_name": "白澤 賢斗",
                 "coo_1": "COO",
                 "coo_name_1": "白澤 里美"
+            },
+            "business": {
+                "title": "事業内容"
             }
         }
     },

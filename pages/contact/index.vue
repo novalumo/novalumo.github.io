@@ -15,28 +15,6 @@
           <div class="row mx-2">
             <div class="col contact">
               <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>{{ $t('contact.required') }}</p>
-              <!-- old -->
-              <!--
-              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf57U5V7adWmUbIrFIOoNzk90Ex5lOPIJ85ufPnJD7Yq8GdLA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                  <label for="formNameData">お名前 / Name<span>*</span></label>
-                  <input type="text" name="entry.596453701" id="formNameData" required>
-                  <label for="formCompanyData">会社名・所属 / Company Name & Position</label>
-                  <input type="text" name="entry.219182896" id="formCompanyData">
-                  <label for="formAddressData">住所 / Address</label>
-                  <input type="text" name="entry.1622218293" id="formAddressData">
-                  <label for="formEmailData">メールアドレス / Email<span>*</span></label>
-                  <input type="email" name="entry.1862351476" id="formEmailData" required>
-                  <label for="formPhoneNumberData">電話番号 / Phone Number</label>
-                  <input type="tel" name="entry.1806945523" id="formPhoneNumberData">
-                  <label for="formTitleData">タイトル / Title<span>*</span></label>
-                  <input type="text" name="entry.1858330016" id="formTitleData" required>
-                  <label for="formBodyData">本文 / Body<span>*</span></label>
-                  <textarea name="entry.2117780832" id="formBodyData" cols="30" rows="10" required></textarea>
-                  <div class="mx-auto">
-                    <button class="btn" id="subBtn">送信する</button>
-                  </div>
-              </form>
-              -->
 
               <form onsubmit="return false" @submit.prevent>
                 <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
@@ -76,6 +54,8 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
   head() {
     return {

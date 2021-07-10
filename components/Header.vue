@@ -7,18 +7,18 @@
       </nuxt-link>
       <ul class="header-menu">
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
+          <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
         </li>
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
+          <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
         </li>
         <li class="header-menu-item">
-            <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
+          <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
         </li>
       </ul>
       <div class="menu-opener">
-        <a href="#" onclick="openSmartMenu();" class="btn-open">
-            <img src="/img/btn-open.svg" width="32">
+        <a href="#" @click="openSPMenu()" class="btn-open">
+          <img src="/img/btn-open.svg" width="32">
         </a>
       </div>
     </header>
@@ -26,29 +26,41 @@
     <!-- Mobile -->
     <div class="header-menubox-sp" id="sp_menu">
       <div class="menu-sp-top">
-          
-          <a href="#" onclick="closeSmartMenu();" class="close-btn">
-              <img src="/img/btn-close.svg" width="30">
-          </a>
+        <a href="#" @click="closeSPMenu()" class="close-btn">
+          <img src="/img/btn-close.svg" width="30">
+        </a>
       </div>
       <ul class="header-menu-sp">
-          <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
-          </li>
-          <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
-          </li>
-          <li class="header-menu-item-sp">
-              <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
-          </li>
+        <li class="header-menu-item-sp">
+          <nuxt-link :to="localePath('/business/')">{{$t('header.business')}}</nuxt-link>
+        </li>
+        <li class="header-menu-item-sp">
+          <nuxt-link :to="localePath('/company/')">{{$t('header.company')}}</nuxt-link>
+        </li>
+        <li class="header-menu-item-sp">
+          <nuxt-link :to="localePath('/contact/')">{{$t('header.contact')}}</nuxt-link>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
-    
+  methods: {
+    openSPMenu() {
+      $('#overlay').fadeIn()
+      document.getElementById('sp_menu').classList.toggle('active')
+      document.body.style['overflow-y'] = 'hidden'
+    },
+    closeSPMenu() {
+      $('#overlay').fadeOut()
+      document.getElementById('sp_menu').classList.remove('active')
+      document.body.style['overflow-y'] = 'auto'
+    }
+  }
 }
 </script>
 
@@ -57,7 +69,6 @@ header {
   background: #fff;
   color: #333;
   padding: 0 0 0 20px;
-  // border-top: solid 1px #ddd;
   border-bottom: solid 1px #ddd;
   display: flex;
   z-index: 999;

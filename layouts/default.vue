@@ -1,7 +1,7 @@
 <template>
 <div>
   <Header />
-  <div id="overlay"></div>
+  <div id="overlay" @click="hideOverlay()"></div>
   <transition name="page">
     <Nuxt />
   </transition>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
   head() {
     return {
@@ -38,6 +40,11 @@ export default {
       if (localStorage.getItem('visited') == null) {
         localStorage.setItem('visited', 'true')
       }
+    },
+    hideOverlay() {
+      $('#overlay').fadeOut();
+      document.getElementById('sp_menu').classList.remove('active');
+      document.body.style['overflow-y'] = 'auto';
     }
   },
   mounted() {

@@ -27,9 +27,11 @@
               <!-- company name -->
               <tr>
                 <th>{{ $t('company.overview.name') }}</th>
-                <td>
-                  <span><ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社</span><br>
-                  <span>{{ $t('company.overview.name_eng') }}:</span> <span>Novalumo Japan G.K.</span>
+                <td v-if="this.lang === 'ja'">
+                  <ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社<br>
+                </td>
+                <td v-else>
+                  Novalumo Japan G.K.
                 </td>
               </tr>
               <!-- capital -->
@@ -53,6 +55,16 @@
                 <th><span title="最高執行責任者">{{ $t('company.overview.officer.coo_1') }}</span></th>
                 <td>{{ $t('company.overview.officer.coo_name_1') }}</td>
               </tr>
+              <!-- business -->
+              <tr>
+                <th>{{ $t('company.overview.business.title') }}</th>
+                <td>
+                  {{ $t('business.ict.title') }}<br>
+                  {{ $t('business.system.title') }}<br>
+                  {{ $t('business.contents.title') }}<br>
+                  {{ $t('business.management.title') }}
+                </td>
+              </tr>
             </tbody>
           </table>
 
@@ -73,6 +85,11 @@ export default {
       ]
     }
   },
+  data() {
+    return {
+      lang: this.$i18n.localeProperties.code,
+    }
+  },
 }
 </script>
 
@@ -83,7 +100,7 @@ a {
 }
 table {
   width: 100%;
-  margin: -10px 0 34px 0;
+  margin: 0 0 34px 0;
   border-collapse: collapse;
 }
 tr {
@@ -91,13 +108,13 @@ tr {
 }
 th, td {
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.8;
   vertical-align: middle;
   padding: 20px 0;
 }
 th {
   width: 250px;
-  // font-weight: normal;
+  font-weight: normal;
 }
 th span, td span {
   display: inline-block;
