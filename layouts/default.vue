@@ -36,20 +36,12 @@ export default {
     }
   },
   methods: {
-    setVisitFlg() {
-      if (localStorage.getItem('visited') == null) {
-        localStorage.setItem('visited', 'true')
-      }
-    },
     hideOverlay() {
       $('#overlay').fadeOut();
       document.getElementById('sp_menu').classList.remove('active');
       document.body.style['overflow-y'] = 'auto';
     }
   },
-  mounted() {
-    this.setVisitFlg()
-  }
 }
 </script>
 

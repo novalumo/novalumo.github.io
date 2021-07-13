@@ -1,56 +1,56 @@
 <template>
-    <div>
-        <div class="title">
-          <div class="title-body">
-            <h1>Contact</h1>
-            <p>お問い合わせ</p>
-          </div>
-        </div>
+  <div>
+    <div class="title">
+      <div class="title-body">
+        <h1 class="animate" data-animation="title">Contact</h1>
+        <p class="animate" data-animation="title">お問い合わせ</p>
+      </div>
+    </div>
 
-        <div class="info" v-if="stop">
-          <p><i class="fas fa-fw fa-exclamation-circle"></i> 新規制作依頼の受付を一時停止しております。お問い合わせ頂いたものに関しては確認次第ご連絡させていただきます。</p>
-        </div>
+    <div class="info" v-if="stop">
+      <p><i class="fas fa-fw fa-exclamation-circle"></i> 新規制作依頼の受付を一時停止しております。お問い合わせ頂いたものに関しては確認次第ご連絡させていただきます。</p>
+    </div>
 
-        <div class="container my-5">
-          <div class="row mx-2">
-            <div class="col contact">
-              <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>{{ $t('contact.required') }}</p>
+    <div class="container my-5">
+      <div class="row mx-2">
+        <div class="col contact">
+          <p style="font-weight: bold;"><span style="color: #a00; font-size: 1.2em;">*</span>{{ $t('contact.required') }}</p>
 
-              <form onsubmit="return false" @submit.prevent>
-                <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
-                <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
-                <label for="formCompanyData">{{ $t('contact.company') }}</label>
-                <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
-                <label for="formAddressData">{{ $t('contact.address') }}</label>
-                <input type="text" name="address" class="formInput" id="formAddressData">
-                <label for="formEmailData">{{ $t('contact.email') }}<span>*</span></label>
-                <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
-                <label for="formPhoneNumberData">{{ $t('contact.phone') }}</label>
-                <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
-                <label for="formTitleData">{{ $t('contact.inquiry_title') }}<span>*</span></label>
-                <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
-                <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
-                <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
-                <div class="col-12">
-                  <div class="chkbox">
-                    <input type="checkbox" id="agree" v-model="agree">
-                    <label for="agree">{{ $t('contact.agree.1') }}<nuxt-link :to="localePath('/privacy/')">{{ $t('contact.agree.2') }}</nuxt-link>{{ $t('contact.agree.3') }}</label>
-                  </div>
-                  <!-- <div class="g-recaptcha" data-sitekey="6Lf33C0bAAAAAFCEQdx0Mk2wlGEbMEx1JJOgg3Gx" data-callback="onloadCallback"></div> -->
-                </div>
-                <div class="col-12">
-                  <div class="submit">
-                    <button id="submitButton" class="btn" v-bind:class="{disabled:!agree}" v-bind="{disabled:!agree}" @click="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
-                  </div>
-                </div>
-              </form>
-              <div class="sending">
-                <p id="message">{{ $t('contact.sending_message') }}</p>
+          <form onsubmit="return false" @submit.prevent>
+            <label for="formNameData">{{ $t('contact.name') }}<span>*</span></label>
+            <input type="text" name="name" class="formInput" id="formNameData" autocomplete="name" required>
+            <label for="formCompanyData">{{ $t('contact.company') }}</label>
+            <input type="text" name="company" class="formInput" id="formCompanyData" autocomplete="organization">
+            <label for="formAddressData">{{ $t('contact.address') }}</label>
+            <input type="text" name="address" class="formInput" id="formAddressData">
+            <label for="formEmailData">{{ $t('contact.email') }}<span>*</span></label>
+            <input type="email" name="email" class="formInput" id="formEmailData" autocomplete="email" required>
+            <label for="formPhoneNumberData">{{ $t('contact.phone') }}</label>
+            <input type="tel" name="phone" class="formInput" id="formPhoneNumberData" autocomplete="off">
+            <label for="formTitleData">{{ $t('contact.inquiry_title') }}<span>*</span></label>
+            <input type="text" name="title" class="formInput" id="formTitleData" autocomplete="off" required>
+            <label for="formBodyData">{{ $t('contact.body') }}<span>*</span></label>
+            <textarea name="body" class="formInput" id="formBodyData" rows="4" required></textarea>
+            <div class="col-12">
+              <div class="chkbox">
+                <input type="checkbox" id="agree" v-model="agree">
+                <label for="agree">{{ $t('contact.agree.1') }}<nuxt-link :to="localePath('/privacy/')">{{ $t('contact.agree.2') }}</nuxt-link>{{ $t('contact.agree.3') }}</label>
+              </div>
+              <!-- <div class="g-recaptcha" data-sitekey="6Lf33C0bAAAAAFCEQdx0Mk2wlGEbMEx1JJOgg3Gx" data-callback="onloadCallback"></div> -->
+            </div>
+            <div class="col-12">
+              <div class="submit">
+                <button id="submitButton" class="btn" v-bind:class="{disabled:!agree}" v-bind="{disabled:!agree}" @click="postInquiry()">{{ $t('contact.send_button') }} <i class="fas fa-fw fa-angle-right"></i></button>
               </div>
             </div>
+          </form>
+          <div class="sending">
+            <p id="message">{{ $t('contact.sending_message') }}</p>
           </div>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -129,6 +129,9 @@ export default {
           })
       }
     },
+  },
+  mounted() {
+    this.$intersectionObserver()
   }
 }
 </script>

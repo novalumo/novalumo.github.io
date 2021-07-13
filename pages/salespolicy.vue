@@ -2,8 +2,8 @@
   <div>
     <div class="title">
       <div class="title-body">
-        <h1>Sales Policy</h1>
-        <p>販売条件</p>
+        <h1 class="animate" data-animation="title">Sales Policy</h1>
+        <p class="animate" data-animation="title">販売条件</p>
       </div>
     </div>
 
@@ -145,6 +145,9 @@ export default {
     this.info = await fetch(
       'https://script.google.com/macros/s/AKfycbxezm-94sqtfbuvEyJZJ_y8lZ4MIyy2UuBzxjAGsZrUSF9nTeN8pya_LT1ExadxO1bJ/exec'
     ).then(res => res.json())
+  },
+  mounted() {
+    this.$intersectionObserver()
   }
 }
 </script>

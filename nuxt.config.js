@@ -57,12 +57,12 @@ export default {
   buildModules:
   [
     '@nuxt/typescript-build',
-    '@nuxt/image'
+    '@nuxt/image',
   ],
   modules:
   [
-    //'@nuxt/content',
     ['nuxt-i18n', i18n],
+    // '@nuxtjs/sitemap',
     '@nuxtjs/axios',
     '@nuxtjs/gtm'
   ],
@@ -78,4 +78,14 @@ export default {
     debug: false,
     pageTracking: true,
   },
+  // sitemap: {
+  //   path: '/sitemap.xml',
+  //   hostname: 'https://www.novalumo.llc',
+  //   exclude: [
+  //     '/contact/result'
+  //   ],
+  //   routes: [
+
+  //   ]
+  // },
 }

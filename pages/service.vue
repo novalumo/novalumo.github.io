@@ -2,8 +2,8 @@
     <div>
         <div class="title">
           <div class="title-body">
-            <h1>Service</h1>
-            <p>事業紹介</p>
+            <h1 class="animate" data-animation="title">Service</h1>
+            <p class="animate" data-animation="title">事業紹介</p>
           </div>
         </div>
 
@@ -48,6 +48,9 @@ export default {
       ]
     }
   },
+  mounted() {
+    this.$intersectionObserver()
+  }
 }
 </script>
 

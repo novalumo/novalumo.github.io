@@ -2,8 +2,8 @@
     <div>
         <div class="title">
           <div class="title-body">
-            <h1>Recruit</h1>
-            <p>採用情報</p>
+            <h1 class="animate" data-animation="title">Recruit</h1>
+            <p class="animate" data-animation="title">採用情報</p>
           </div>
         </div>
 
@@ -28,6 +28,9 @@ export default {
         { hid: 'robots', name: 'robots', content: 'noindex,nofollow' },
       ]
     }
+  },
+  mounted() {
+    this.$intersectionObserver()
   }
 }
 </script>

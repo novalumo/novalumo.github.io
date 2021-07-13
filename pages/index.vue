@@ -11,22 +11,22 @@
     <!-- hero -->
     <div class="cover">
       <div class="cover-body">
-        <h1 class="text">We Brighten <span>The World</span></h1>
+        <h1 class="text animate" data-animation="title">We Brighten <span>The World</span></h1>
         <!-- i18n -->
         <div v-if="this.lang == 'ja'">
-          <p class="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
+          <p class="text animate" data-animation="text"><span>世界に</span><span>希望の光を届ける</span><span>企業を目指しています。</span></p>
         </div>
         <div v-if="this.lang == 'en'">
-          <p class="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
+          <p class="text animate" data-animation="text"><span>Novalumo is</span> <span>A New World</span> <span>Creation Company.</span></p>
         </div>
         <div v-if="this.lang == 'eo'">
-          <p class="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
+          <p class="text animate" data-animation="text"><span>Novalumo estas</span> <span>Nova Monda</span> <span>Krea Kompanio.</span></p>
         </div>
         <div v-if="this.lang == 'de'">
-          <p class="text"><span>Novalumo ist</span> <span>eine Firma zur</span> <span>Schaffung einer neuen Welt.</span></p>
+          <p class="text animate" data-animation="text"><span>Novalumo ist</span> <span>eine Firma zur</span> <span>Schaffung einer neuen Welt.</span></p>
         </div>
         <div v-if="this.lang == 'fr'">
-          <p class="text"><span>Novalumo est</span> <span>une Compagnie de</span> <span>Création du Nouveau Monde.</span></p>
+          <p class="text animate" data-animation="text"><span>Novalumo est</span> <span>une Compagnie de</span> <span>Création du Nouveau Monde.</span></p>
         </div>
         <!-- i18n -->
       </div>
@@ -77,6 +77,9 @@ export default {
       return false
     }
   },
+  mounted() {
+    this.$intersectionObserver()
+  }
 }
 </script>
 

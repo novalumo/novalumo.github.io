@@ -3,8 +3,8 @@
 
     <div class="title">
       <div class="title-body">
-        <h1>Company</h1>
-        <p>会社情報</p>
+        <h1 class="animate" data-animation="title">Company</h1>
+        <p class="animate" data-animation="title">会社情報</p>
       </div>
     </div>
 
@@ -90,6 +90,9 @@ export default {
       lang: this.$i18n.localeProperties.code,
     }
   },
+  mounted() {
+    this.$intersectionObserver()
+  }
 }
 </script>
 

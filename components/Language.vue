@@ -39,7 +39,7 @@ export default {
       this.$router.replace(this.switchLocalePath(event))
     },
     toggle() {
-      document.getElementById('langSwitch').style.transition = 'linear .1s'
+      document.getElementById('langSwitch').style.transition = 'ease .1s'
       // Show
       if (document.getElementById('langSwitch').classList.contains('hidden')) {
         document.getElementById('langSwitch').style.transform = 'translateX(0%)'

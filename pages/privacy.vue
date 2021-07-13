@@ -2,8 +2,8 @@
   <div>
     <div class="title">
       <div class="title-body">
-        <h1>Privacy Policy</h1>
-        <p>プライバシーポリシー</p>
+        <h1 class="animate" data-animation="title">Privacy Policy</h1>
+        <p class="animate" data-animation="title">プライバシーポリシー</p>
       </div>
     </div>
 
@@ -104,6 +104,9 @@ export default {
     return {
       title: 'プライバシーポリシー',
     }
+  },
+  mounted() {
+    this.$intersectionObserver()
   }
 }
 </script>

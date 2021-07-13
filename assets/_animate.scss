@@ -1,22 +1,55 @@
-// 
+// ------------------------------
 // Animation
-// 
+// ------------------------------
 
-// move animation
+// For Intersection Observer
+.animate {
+
+  // Title --->
+  &[data-animation="title"] {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 25);
+    transition: ease .5s;
+  
+    &.animated {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  // Text --->
+  &[data-animation="text"] {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 25);
+    transition: ease .5s;
+  
+    &.animated {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  // Fade --->
+  &[data-animation="fade"] {
+    opacity: 0;
+    transition: ease 1s;
+  
+    &.animated {
+      opacity: 1;
+    }
+  }
+  
+}
+
+// Page Transition
 .page-enter {
-  opacity: 0;
+  opacity: 1;
 }
 .page-enter-active {
   transition: opacity .2s linear;
 }
 
-/* */
-.animate {
-  animation: slideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
-}
-
-// transition: opacity 0.5s ease 0s, transform 0.5s ease 0s;
-  
+// Keyframes
 @keyframes slideIn {
   0% {
     transform: translateY(-50px);

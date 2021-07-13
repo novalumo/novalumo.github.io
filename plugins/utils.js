@@ -29,8 +29,43 @@ const is404 = (url) => {
   return xhr.status
 }
 
+const intersectionObserver = () => {
+
+  // Observing Elements
+  const elems = document.querySelectorAll('.animate')
+
+  const options = {
+    root: null,
+    // rootMargin: '-50% 0px', // Center of viewport
+    threshold: 0
+  }
+  
+  const observer = new IntersectionObserver((entries) =>
+  {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        // Check
+        console.log(entry.target.dataset)
+
+        // Action
+        entry.target.classList.add('animated')
+      
+      }
+    })
+  
+  }, options)
+
+  // Start Observing
+  elems.forEach(box => {
+    observer.observe(box)
+  })
+
+}
+
 export default ({}, inject) => {
   inject('getSiteUrl', getSiteUrl)
   inject('getEnglishDate', getEnglishDate)
   inject('is404', is404)
+  inject('intersectionObserver', intersectionObserver)
 }
