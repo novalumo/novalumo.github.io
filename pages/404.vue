@@ -4,7 +4,6 @@
     <div>
       <h1>404 Not Found</h1>
       <p>お探しのページは見つかりませんでした</p>
-      <small><span id="counter"></span>秒後にトップページへ移動します</small>
     </div>
   </div>
 </div>
@@ -12,25 +11,17 @@
 
 <script>
 export default {
-  mounted() {
-    let count = 10
-    const countUp = () => {
-      if (count != 0) {
-        document.getElementById('counter').innerHTML = count
-        console.log(count--);
-        setTimeout(countUp, 1000);
-      } else {
-        location.href = '/'
-      }
+  head() {
+    return {
+      title: '404'
     }
-    countUp()
   }
 }
 </script>
 
 <style lang="scss" scoped>
 #error {
-  background: url(https://source.unsplash.com/GQD3Av_9A88);
+  background: url(https://source.unsplash.com/GQD3Av_9A88/1280x720);
   background-size: cover;
   background-position: bottom center;
   height: 100%;

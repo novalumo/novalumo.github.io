@@ -20,25 +20,10 @@ export default {
       return ['Error', 'エラーが発生しました']
     }
   },
-  mounted() {
-    if (this.error.statusCode === 404) {
-      let count = 10
-      const countUp = () => {
-        if (count != 0) {
-          document.getElementById('counter').innerHTML = count
-          console.log(count--);
-          setTimeout(countUp, 1000);
-        } else {
-          location.href = '/'
-        }
-      }
-      countUp()
-    }
-  },
   head() {
     return {
       htmlAttrs: {
-        lang: this.$i18n.localeProperties.iso
+        lang: this.$i18n.locale,
       }
     }
   },
@@ -47,7 +32,7 @@ export default {
 
 <style lang="scss">
 #error {
-  background: url(https://source.unsplash.com/GQD3Av_9A88);
+  background: url(https://source.unsplash.com/GQD3Av_9A88/1280x720);
   background-size: cover;
   background-position: bottom center;
   height: 100%;
