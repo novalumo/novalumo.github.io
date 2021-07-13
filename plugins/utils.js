@@ -46,7 +46,7 @@ const intersectionObserver = () => {
       if (entry.isIntersecting) {
 
         // Check
-        console.log(entry.target.dataset)
+        // console.log(entry.target.dataset)
 
         // Action
         entry.target.classList.add('animated')
